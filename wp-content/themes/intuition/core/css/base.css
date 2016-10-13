@@ -106,7 +106,7 @@ input[type=submit] { width:auto; -webkit-appearance:none; }
 hr { background-color:#fff; border:0; border-top:1px solid #bbb; border-bottom:1px solid #fff; clear:both; height:0; margin:40px 0; }
 
 /* INLINE IMAGES */
-img { margin:0; max-width:100%; line-height:0; height:auto; }
+img { margin:0; max-width:100%; line-height:0; height:70px; width:70px; }
 .alignleft, img.alignleft { display:inline; float:left; margin-right:30px; margin-top:4px; }
 .alignright, img.alignright { display:inline; float:right; margin-left:30px; margin-top:4px; }
 .aligncenter, img.aligncenter { display:block; margin-left:auto; margin-right:auto; }

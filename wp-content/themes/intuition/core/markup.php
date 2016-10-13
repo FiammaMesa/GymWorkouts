@@ -158,7 +158,7 @@ if(!function_exists('cpotheme_logo')){
 		if(cpotheme_get_option('general_texttitle') == 0){
 			if(cpotheme_get_option('general_logo') == ''){
 				if(defined('CPOTHEME_LOGO_WIDTH')) $width = CPOTHEME_LOGO_WIDTH;
-				$output .= '<a class="site-logo" href="'.home_url().'"><img src="'.get_template_directory_uri().'/images/logo.png" alt="'.get_bloginfo('name').'" width="'.esc_attr($width).'" height="'.esc_attr($height).'"/></a>';
+				$output .= '<a class="site-logo" href="'.home_url().'"><img src="'.get_template_directory_uri().'/images/heartlogo3.png" alt="'.get_bloginfo('name').'" width="'.esc_attr($width).'" height="'.esc_attr($height).'"/></a>';
 			}else{
 				$logo_width = cpotheme_get_option('general_logo_width');
 				$logo_url = esc_url(cpotheme_get_option('general_logo'));

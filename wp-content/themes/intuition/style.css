@@ -296,7 +296,7 @@ POSTS & PAGES
 
 /* PORTFOLIO SHOWCASE */
 .portfolio { clear:both; padding:0 0 10px; }
-.portfolio-heading { font-size:2em; margin:0 120px 30px 0; }
+.portfolio-heading { font-size:2em; margin:0 120px 30px 0; font-weight:300;}
 .portfolio-contents { position:relative; overflow:hidden; }
 .portfolio-list { position:relative; width:105%; }
 .portfolio-row { overflow:hidden; width:100%; }

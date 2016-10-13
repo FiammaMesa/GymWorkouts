@@ -19,7 +19,7 @@ GENERAL ELEMENTS
 body { font-family:'Open Sans', Arial, Helvetica, sans-serif; background:#fff; color:#777; font-size:0.875em; line-height:1.6; }
 
 /* HEADINGS */
-h1, h2, h3, h4, h5, h6 { color:#444; font-weight:300; line-height:1.2; margin:0 0 20px; }
+h1, h2, h3, h4, h5, h6 { color:#444; font-weight:300; line-height:1.2; margin:12px 0 50px; }
 h1 { font-size:2.5em; } 
 h2 { font-size:2em; } 
 h3 { font-size:1.5em; } 
@@ -186,7 +186,7 @@ NAVIGATION
 /* MAIN MENU */
 .menu-main { padding-top:5px; float:right; }
 /* Menu Elements */
-.menu-main li a { padding:10px; font-size:1.1em; color:#777; }
+.menu-main li a { padding:20px; font-size:1.2em; color:#777; }
 .menu-main li a .menu-description { }
 .menu-main li:hover > a, 
 .menu-main li a:hover { }
@@ -196,7 +196,7 @@ NAVIGATION
 .menu-main .current_page_ancestor > a:hover, 
 .menu-main .current-menu-item > a:hover { }
 /* Children Elements */
-.menu-main .has-children:before { color:#ccc; content:'\f0d7'; font-size:10px; }
+.menu-main .has-children:before { color:#ccc; content:'\f0d7'; font-size:16px; }
 .menu-main li ul { margin:0; width:220px; background:#fff; background:rgba(255,255,255,0.8); box-shadow:0 1px 3px 1px rgba(0,0,0,0.2), inset 0 0 3px 1px #fff; }
 .menu-main li ul li a { line-height:1.5; padding:10px 15px; font-size:0.9em; text-shadow:none; border-top:1px solid #fff; width:auto; }
 .menu-main li ul li:first-child a { border-top:none; }

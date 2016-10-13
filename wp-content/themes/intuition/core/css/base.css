@@ -106,7 +106,7 @@ input[type=submit] { width:auto; -webkit-appearance:none; }
 hr { background-color:#fff; border:0; border-top:1px solid #bbb; border-bottom:1px solid #fff; clear:both; height:0; margin:40px 0; }
 
 /* INLINE IMAGES */
-img { margin:0; max-width:100%; line-height:0; height:70px; width:70px; }
+.site-logo img { margin:0; max-width:100%; line-height:0; height:70px; width:70px; }
 .alignleft, img.alignleft { display:inline; float:left; margin-right:30px; margin-top:4px; }
 .alignright, img.alignright { display:inline; float:right; margin-left:30px; margin-top:4px; }
 .aligncenter, img.aligncenter { display:block; margin-left:auto; margin-right:auto; }
@@ -187,6 +187,28 @@ LAYOUT
 /* MAIN/CONTENT */
 .main { overflow:hidden; padding:30px 0 10px; }
 /* Full width pages have no container */
+
+.row .content-samples img{
+	height: 200px;
+	width: 200px;
+	border: 1px solid #eee;
+	display: block;
+	float: right;
+	margin-right: 2%;
+	margin-bottom: 4%;
+}
+
+.row .content-imgs img{
+	border: 1px solid #eee;
+	background: white;
+	width: 200px;
+	height: 150px;
+	margin-left: 25%;
+	margin-bottom: 8%;
+
+}
+
+
 .content-full .main { padding:0; }
 .content-full .main > .container { max-width:100%; width:auto; padding:0; } 
 .content, 

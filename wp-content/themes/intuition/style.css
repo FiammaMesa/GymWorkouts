@@ -425,3 +425,36 @@ RESPONSIVE STYLES
 	.footermenu { float:none; }
 	.menu-footer li a { margin:0 10px 10px 0; }
 }
+
+@media (max-width: 767px) {
+	
+	.wrapper-boxed .container {
+    	padding: 0;
+	}
+
+	.tagline .container {
+    	padding-left: 5%;
+    	padding-right: 5%;
+	}
+
+	.portfolio-heading {
+    	font-size: 2em;
+    	margin: 0 120px 30px 10px;
+    	font-weight: 300;
+	}
+
+	.row .content-samples img {
+	    height: 200px;
+	    width: 200px;
+	    border: 1px solid #eee;
+	    display: block;
+	    float: right;
+	    margin-bottom: 4%;
+	}
+
+	.column-narrow {
+	    display: block;
+	    float: left;
+	    margin-right: 0;
+	}
+}

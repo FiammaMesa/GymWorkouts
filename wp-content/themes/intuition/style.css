@@ -533,13 +533,6 @@ RESPONSIVE STYLES
 	    margin-bottom: 4%;
 	}
 
-	.column-narrow {
-	    display: block;
-	    float: left;
-	    margin-right: 0;
-	    vertical-align: t;
-	}
-
 	.pagetitle .pagetitle-title { 
 		margin-left: 5%;
 		margin-bottom: 3%; 

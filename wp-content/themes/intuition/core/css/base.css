@@ -870,4 +870,9 @@ RESPONSIVE STYLES
 	    margin-bottom: 8%;
 	}
 
+	p, address {
+	    margin-bottom: 1.6em;
+	    margin-left: 2%;
+	}
+
 }

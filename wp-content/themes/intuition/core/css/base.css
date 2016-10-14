@@ -675,6 +675,10 @@ RESPONSIVE STYLES
 	.shopping-cart:hover .cart-list { display:block; visibility:visible; opacity:1; }
 	
 	/* MAIN MENU DROPDOWN */
+	.main {
+		overflow: hidden;
+		padding: 0 0 10px;
+	}
 	.menu-main li ul { display:none; visibility:visible; opacity:1; }
 	.menu-main li:hover > ul { display:block; visibility:visible; opacity:1; }    
 }
@@ -794,6 +798,17 @@ RESPONSIVE STYLES
 	.footer { display:none; }
 }
 
+@media (max-width: 1024px){
+	.row .content-imgs img {
+    	border: 1px solid #eee;
+    	background: white;
+    	width: 200px;
+    	height: 150px;
+   		margin-left: 7%;
+    	margin-bottom: 8%;
+	}
+}
+
 @media (max-width: 991px) {
 	.main {
 		overflow:hidden;
@@ -804,6 +819,15 @@ RESPONSIVE STYLES
 		width: 40%;
 	}
 
+@media (max-width: 768px) {
+	.row .content-imgs img {
+	    border: 1px solid #eee;
+	    background: white;
+	    width: 200px;
+	    height: 150px;
+	    margin-left: 25%;
+	    margin-bottom: 8%;
+	}
 }
 
 @media (max-width: 767px) {

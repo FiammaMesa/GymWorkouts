@@ -392,6 +392,46 @@ RESPONSIVE STYLES
 /* TABLET SCREENS (LANDSCAPE) */
 @media screen and (max-width: 1024px){}
 
+@media (max-width: 991px){
+	.feature-img1 { 
+		width: 100%;
+		height: 136px; 
+		background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/back.jpg); 
+		background-size: cover; 
+		background-repeat: no-repeat;
+	}
+	
+	.feature-img2 { 
+		width: 100%; 
+		height: 136px; 
+		background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/leg.jpg); 
+		background-size: cover; 
+		background-repeat: no-repeat; 
+		background-position: 70% 30%;
+	}
+
+	.feature-img3 { 
+		width: 100%; 
+		height: 136px; 
+		background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/bicep.jpg); 
+		background-size: cover; 
+		background-repeat: no-repeat; 
+		background-position: 70% 30%;
+	}
+
+	.pagetitle .pagetitle-title { 
+		margin-left: 5%;
+		margin-top: 6%;
+		float:left; 
+		font-size:2.5em; 
+	}
+
+	h3 {
+		font-size: 1.2em;
+	}
+
+
+}
 
 /* TABLET PORTRAIT */
 @media screen and (max-width: 800px){
@@ -427,7 +467,16 @@ RESPONSIVE STYLES
 }
 
 @media (max-width: 767px) {
-	
+
+	.portfolio-item-title h3 {
+		margin: 0;
+	}
+
+	.portfolio-item p{
+        height: 0;
+        margin: 0;
+	}
+
 	.wrapper-boxed .container {
     	padding: 0;
 	}
@@ -439,13 +488,13 @@ RESPONSIVE STYLES
 
 	.portfolio-heading {
     	font-size: 2em;
-    	margin: 0 120px 30px 10px;
+    	margin: 0 10px 30px 10px;
     	font-weight: 300;
 	}
 
 	.row .content-samples img {
 	    height: 200px;
-	    width: 200px;
+	    width: 100%;
 	    border: 1px solid #eee;
 	    display: block;
 	    float: right;
@@ -456,5 +505,35 @@ RESPONSIVE STYLES
 	    display: block;
 	    float: left;
 	    margin-right: 0;
+	    vertical-align: t;
+	}
+
+	.pagetitle .pagetitle-title { 
+		margin-left: 5%;
+		margin-bottom: 3%; 
+		float:left; 
+		font-size:2.5em; 
+	}
+
+	a:link, a:visited { 
+		margin-left: 3%;
+		color:#F59A0A; 
+		text-decoration:none; 
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+    	color: #444;
+    	font-weight: 300;
+    	line-height: 1.2;
+    	margin: 12px 0 50px 5%;
+	}
+
+	.features .feature {
+	    position: relative;
+	    margin: 0px 0 10px;
+	    text-align: center;
+	    background: #fff;
+	    box-shadow: 0 1px 3px 1px rgba(0,0,0,0.1);
+	    border: 1px solid #ddd;
 	}
 }

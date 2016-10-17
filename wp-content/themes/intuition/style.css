@@ -143,7 +143,9 @@ LAYOUT
 
 /* SECTIONS */
 
-
+.opaco {
+	opacity: 0.3;
+}
 /* HOMEPAGE FEATURES */
 .feature-img1 { width: 100%; height: 234px; background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/back.jpg); background-size: cover; background-repeat: no-repeat;}
 .feature-img2 { width: 100%; height: 234px; background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/leg.jpg); background-size: cover; background-repeat: no-repeat; background-position: 70% 30%;}
@@ -158,13 +160,6 @@ LAYOUT
 .features .feature .feature-body { padding:0 30px 5px; }
 .features .feature .feature-title { margin:20px 0; font-size:1.6em; text-align:center; padding:0 0 20px; border-bottom:1px solid #eee; }
 .features .feature .feature-content { clear:both; text-align:justity; margin: 2%;}
-
-/* PUBLICITY */
-
-.main-publi {
-	margin-left:40px;
-	margin-bottom: 10px;
-}
 
 
 

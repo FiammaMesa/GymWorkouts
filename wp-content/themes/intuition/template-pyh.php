@@ -17,23 +17,47 @@
 						<h2 class="feature-content">Ejercicios de Piernas</h2>
 					</div>
 
-					<div class="content-samples column-narrow col4">
-			        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/cuadriceps.gif">
-					</div>
-					<div class="content-samples column-narrow col4">
-			        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/cuadriceps1.gif">
-					</div>
+					<?php
+
+		        		global $wpdb;
+		        		$results = $wpdb->get_results('SELECT * 
+														FROM wp_posts 
+														WHERE ID IN( SELECT object_id
+																	FROM wp_term_relationships
+																	WHERE term_taxonomy_id IN ( SELECT term_id 
+																								FROM wp_terms 
+																								WHERE slug="cuadriceps") 
+		        													)
+		        									 ');
+		        		foreach ($results as $result){
+		        			?> <div class="content-samples column-narrow col4"> <?php
+		        				echo $result->post_content;
+		        			?> </div> <?php
+		        		}
+
+		        		global $wpdb;
+		        		$exits = $wpdb->get_results('SELECT * 
+														FROM wp_posts 
+														WHERE ID IN( SELECT object_id
+																	FROM wp_term_relationships
+																	WHERE term_taxonomy_id IN ( SELECT term_id 
+																								FROM wp_terms 
+																								WHERE slug="aductores") 
+		        													)
+		        									 ');
+		        		foreach ($exits as $exit){
+		        			if (!in_array($exit, $results)){
+		        				?> <div class="content-samples column-narrow col4"> <?php
+		        					echo $exit->post_content;
+		        				?> </div> <?php
+		        			}
+		        		}
+
+
+		        	?>
 
 				</div>
 
-				<div class="row">
-					<div class="content-imgs column-narrow col4">
-						<img src="/fiamma/miweb/wp-content/uploads/2016/10/sentadilla.png">
-					</div>
-			                <div class="content-imgs column-narrow col4">
-						<img src="/fiamma/miweb/wp-content/uploads/2016/10/zancada.png">
-					</div>
-				</div>
 
 				<div class="row">
 					
@@ -42,18 +66,24 @@
 					</div>
 					<div class="row">
 
-						<div class="content-imgs column-narrow col4">
-				        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_hombro.jpg">
-						</div>
-						<div class="content-imgs column-narrow col4">
-				        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_hombro1.jpg">
-						</div>
-			                        <div class="content-imgs column-narrow col4">
-				        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_hombro3.jpg">
-						</div>
-			                        <div class="content-imgs column-narrow col4 last-column">
-				        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_hombro4.jpg">
-						</div>
+						<?php
+
+		        		global $wpdb;
+		        		$results = $wpdb->get_results('SELECT * 
+														FROM wp_posts 
+														WHERE ID IN( SELECT object_id
+																	FROM wp_term_relationships
+																	WHERE term_taxonomy_id IN ( SELECT term_id 
+																								FROM wp_terms 
+																								WHERE slug="deltoides") 
+		        													)
+		        									 ');
+		        		foreach ($results as $result){
+		        			?> <div class="content-samples column-narrow col4"> <?php
+		        				echo $result->post_content;
+		        			?> </div> <?php
+		        		}
+		        		?>
 					</div>
 				
 				</div>

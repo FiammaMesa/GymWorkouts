@@ -16,26 +16,65 @@
 						<h2 class="feature-content">Ejercicios de Espalda</h2>
 					</div>
 
-					<div class="content-samples column-narrow col4">
-			        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/espaldagif.gif">
-					</div>
-					<div class="content-samples column-narrow col4">
-			        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/remogif.gif">
-					</div>
-					<div class="content-samples column-narrow col4">
-			        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/espaldatriangulogif.gif">
-					</div>
-					<div class="content-samples column-narrow col4 last-column">
-			        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/espaldagif.gif">
-					</div>
+		        	<?php
+
+		        		global $wpdb;
+		        		$results = $wpdb->get_results('SELECT * 
+														FROM wp_posts 
+														WHERE ID IN( SELECT object_id
+																	FROM wp_term_relationships
+																	WHERE term_taxonomy_id IN ( SELECT term_id 
+																								FROM wp_terms 
+																								WHERE slug="dorsales") 
+		        													)
+		        									 ');
+		        		foreach ($results as $result){
+		        			?> <div class="content-samples column-narrow col4"> <?php
+		        				echo $result->post_content;
+		        			?> </div> <?php
+		        		}
+
+		        		global $wpdb;
+		        		$exits = $wpdb->get_results('SELECT * 
+														FROM wp_posts 
+														WHERE ID IN( SELECT object_id
+																	FROM wp_term_relationships
+																	WHERE term_taxonomy_id IN ( SELECT term_id 
+																								FROM wp_terms 
+																								WHERE slug="lumbares") 
+		        													)
+		        									 ');
+		        		foreach ($exits as $exit){
+		        			if (!in_array($exit, $results)){
+		        				?> <div class="content-samples column-narrow col4"> <?php
+		        					echo $exit->post_content;
+		        				?> </div> <?php
+		        			}
+		        		}
+
+		        		global $wpdb;
+		        		$outs = $wpdb->get_results('SELECT * 
+														FROM wp_posts 
+														WHERE ID IN( SELECT object_id
+																	FROM wp_term_relationships
+																	WHERE term_taxonomy_id IN ( SELECT term_id 
+																								FROM wp_terms 
+																								WHERE slug="trapecios") 
+		        													)
+		        									 ');
+		        		foreach ($outs as $out){
+		        			if ((!in_array($out, $results)) && (!in_array($out, $exits))){
+		        				?> <div class="content-samples column-narrow col4"> <?php
+		        					echo $out->post_content;
+		        				?> </div> <?php
+		        			}
+		        		}
+
+		        	?>
+
 
 				</div>
 
-				<div class="row">
-					<div class="content-imgs column-narrow col4">
-						<img src="/fiamma/miweb/wp-content/uploads/2016/10/espalda06.gif">
-					</div>
-				</div>
 
 				<div class="row">
 					
@@ -43,12 +82,28 @@
 						<h2 class="feature-content">Ejercicios de Tríceps</h2>
 					</div>
 					<div class="row">
-
+					<?php
+		        		global $wpdb;
+		        		$results = $wpdb->get_results('SELECT * 
+														FROM wp_posts 
+														WHERE ID IN( SELECT object_id
+																	FROM wp_term_relationships
+																	WHERE term_taxonomy_id IN ( SELECT term_id 
+																								FROM wp_terms 
+																								WHERE slug="triceps") 
+		        													)
+		        									 ');
+		        		foreach ($results as $result){
+		        			?> <div class="content-samples column-narrow col4"> <?php
+		        				echo $result->post_content;
+		        			?> </div> <?php
+		        		}
+		        	?>
 						<div class="content-imgs column-narrow col4">
-				        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/triceps2.gif">
+				        	
 						</div>
 						<div class="content-imgs column-narrow col4">
-				        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_triceps.jpg">
+				        	
 						</div>
 					</div>
 				

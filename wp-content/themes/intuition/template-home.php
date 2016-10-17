@@ -28,7 +28,7 @@
 				} else {
 				?>
 
-					<div class="column-narrow col3" style="opacity:0.3;">
+					<div class="column-narrow col3 opaco">
 
 						<div class="feature"><div class="feature-img1"></div><h3 class="feature-title">Espalda Tríceps</h3>
 							<div class="feature-content">
@@ -55,7 +55,7 @@
 				<?php
 				} else {
 				?>
-					<div class="column-narrow col3" style="opacity: 0.3;">
+					<div class="column-narrow col3 opaco">
 
 						<div class="feature"><div class="feature-img2"></div><h3 class="feature-title">Piernas Hombros</h3>
 							<div class="feature-content">
@@ -82,7 +82,7 @@
 				<?php
 				} else {
 				?>
-					<div class="column-narrow col3 last-column" style="opacity: 0.3;">
+					<div class="column-narrow col3 last-column opaco">
 
 						<div class="feature"><div class="feature-img3"></div><h3 class="feature-title">Pecho Bíceps</h3>
 							<div class="feature-content">

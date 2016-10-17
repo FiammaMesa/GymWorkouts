@@ -17,23 +17,25 @@
 						<h2 class="feature-content">Ejercicios de Pecho</h2>
 					</div>
 
-					<div class="content-samples column-narrow col4">
-			        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/pec1.gif">
-					</div>
-					<div class="content-samples column-narrow col4">
-			        	<img src="/fiamma/miweb/wp-content/uploads/2016/10/pec2.gif">
-					</div>
-					
+					<?php
 
-				</div>
+		        		global $wpdb;
+		        		$results = $wpdb->get_results('SELECT * 
+														FROM wp_posts 
+														WHERE ID IN( SELECT object_id
+																	FROM wp_term_relationships
+																	WHERE term_taxonomy_id IN ( SELECT term_id 
+																								FROM wp_terms 
+																								WHERE slug="pecho") 
+		        													)
+		        									 ');
+		        		foreach ($results as $result){
+		        			?> <div class="content-samples column-narrow col4"> <?php
+		        				echo $result->post_content;
+		        			?> </div> <?php
+		        		}
+		        	?>
 
-				<div class="row">
-					<div class="content-imgs column-narrow col4">
-						<img src="/fiamma/miweb/wp-content/uploads/2016/10/pecho.jpg">
-					</div>
-			                <div class="content-imgs column-narrow col4">
-						<img src="/fiamma/miweb/wp-content/uploads/2016/10/pecho2.jpg">
-					</div>
 				</div>
 
 				<div class="row">
@@ -43,18 +45,24 @@
 					</div>
 					<div class="row">
 
-						<div class="content-imgs column-narrow col4">
-						     <img src="/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_biceps.jpg">
-					        </div>
-			                        <div class="content-imgs column-narrow col4">
-						     <img src="/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_biceps1.jpg">
-					        </div>
-			                        <div class="content-imgs column-narrow col4">
-						     <img src="/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_biceps2.jpg">
-					        </div>
-			                        <div class="content-imgs column-narrow col4 last-column">
-						     <img src="/fiamma/miweb/wp-content/uploads/2016/10/biceps.jpg">
-					        </div>
+						<?php
+
+		        		global $wpdb;
+		        		$results = $wpdb->get_results('SELECT * 
+														FROM wp_posts 
+														WHERE ID IN( SELECT object_id
+																	FROM wp_term_relationships
+																	WHERE term_taxonomy_id IN ( SELECT term_id 
+																								FROM wp_terms 
+																								WHERE slug="biceps") 
+		        													)
+		        									 ');
+		        		foreach ($results as $result){
+		        			?> <div class="content-samples column-narrow col4"> <?php
+		        				echo $result->post_content;
+		        			?> </div> <?php
+		        		}
+		        	?>
 					</div>
 				
 				</div>

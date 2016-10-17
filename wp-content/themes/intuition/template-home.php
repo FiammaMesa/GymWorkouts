@@ -18,7 +18,7 @@
 
 						<div class="feature"><a href="http://localhost/fiamma/miweb/index.php/ejercicios-de-espalda-y-triceps/"><div class="feature-img1"></div></a><a href="http://localhost/fiamma/miweb/index.php/ejercicios-de-espalda-y-triceps/"><h3 class="feature-title">Espalda Tríceps</h3></a>
 							<div class="feature-content">
-								<p class="feature-content">Aquí encontraras una colección de ejercicios de espalda y triceps, ¡recuerda escoger como mínimo tres de cada uno!</p>
+								<p>Aquí encontraras una colección de distintos ejercicios de espalda y triceps, ¡recuerda escoger como mínimo tres de cada uno!</p>
 							</div>
 						</div>
 
@@ -32,7 +32,7 @@
 
 						<div class="feature"><div class="feature-img1"></div><h3 class="feature-title">Espalda Tríceps</h3>
 							<div class="feature-content">
-								<p class="feature-content">Aquí encontraras una colección de ejercicios de espalda y triceps, ¡recuerda escoger como mínimo tres de cada uno!</p>
+								<p>Aquí encontraras una colección de distintos ejercicios de espalda y triceps, ¡recuerda escoger como mínimo tres de cada uno!</p>
 							</div>
 						</div>
 
@@ -97,8 +97,11 @@
 				</div>
 			</div>
 		</div>
-			
+		<div class="main_publi">
 <?php /*---------------------------------------------------------------------------------------------------------*/
+
+
+	
 		global $wpdb;
 		if (!is_user_logged_in()) {
 			$results = $wpdb->get_results( 'SELECT post_content FROM wp_posts WHERE ID = "162"');
@@ -108,12 +111,7 @@
 		}
 
 ?>
-
-	
-
-
-
-
+		</div>
 
 <?php /*---------------------------------------------------------------------------------------------------------*/?>
 

@@ -159,6 +159,14 @@ LAYOUT
 .features .feature .feature-title { margin:20px 0; font-size:1.6em; text-align:center; padding:0 0 20px; border-bottom:1px solid #eee; }
 .features .feature .feature-content { clear:both; text-align:justity; margin: 2%;}
 
+/* PUBLICITY */
+
+.main-publi {
+	margin-left:40px;
+	margin-bottom: 10px;
+}
+
+
 
 /* PAGE CONTENT */
 .main { }

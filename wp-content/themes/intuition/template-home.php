@@ -169,6 +169,53 @@
 
 					</div>
 				</div>
+
+				<div class="row just-for-view slice-video">
+					
+					<div class="column column-narrow col3">
+						<div class="portfolio-item">
+							<div class="portfolio-item-overlay">
+							    <iframe width="440" height="195" src="https://www.youtube.com/embed/P-vpm14YKNM" frameborder="0" allowfullscreen>
+							    </iframe>
+			                </div>
+							<div class="portfolio-item-title">
+								<a href="https://www.youtube.com/user/EntrenaSergioPeinado">
+									<h3 class="portfolio-title">Sergio Peinado</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="column column-narrow col3">
+						<div class="portfolio-item">
+							<div class="portfolio-item-overlay">
+								<iframe width="440" height="195" src="https://www.youtube.com/embed/jo9O_VpTt1U" frameborder="0" allowfullscreen></iframe>
+			                </div>
+							<div class="portfolio-item-title">
+								<a href="https://www.youtube.com/user/NatyArcilaZ">
+									<h3 class="portfolio-title">Naty Arcila</h3>
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="column column-narrow col3 last-column">
+						<div class="portfolio-item">
+							<div class="portfolio-item-overlay">
+							    <iframe width="440" height="195" src="https://www.youtube.com/embed/6dWYejq7Hu0" frameborder="0" allowfullscreen>
+							    </iframe>
+							</div>
+							<div class="portfolio-item-title">
+								<a href="https://www.youtube.com/user/myBodyDeporte">
+									<h3 class="portfolio-title">Rubén Muca</h3>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			<div class="button slice-button">Ver más</div>
 			</div>
 		<div>
 

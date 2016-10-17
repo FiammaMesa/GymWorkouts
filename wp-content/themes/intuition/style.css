@@ -162,6 +162,14 @@ LAYOUT
 .features .feature .feature-content { clear:both; text-align:justity; margin: 2%;}
 
 
+.slice-button {
+	margin-left: 45%;
+	margin-bottom: 3%;
+}
+
+.slice-video {
+	display: none;
+}
 
 /* PAGE CONTENT */
 .main { }

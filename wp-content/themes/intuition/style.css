@@ -17,9 +17,12 @@ GENERAL ELEMENTS
 
 /* BODY */
 body { font-family:'Open Sans', Arial, Helvetica, sans-serif; background:#fff; color:#777; font-size:0.875em; line-height:1.6; }
+.lines {
+	line-height: 0.6;
+}
 
 /* HEADINGS */
-h1, h2, h3, h4, h5, h6 { color:#444; font-weight:300; line-height:1.2; margin:12px 0 50px; }
+h1, h2, h3, h4, h5, h6 { color:#444; font-weight:300; line-height:1.2; margin:12px 0 24px; }
 h1 { font-size:2.5em; } 
 h2 { font-size:2em; } 
 h3 { font-size:1.5em; } 
@@ -161,6 +164,27 @@ LAYOUT
 .features .feature .feature-title { margin:20px 0; font-size:1.6em; text-align:center; padding:0 0 20px; border-bottom:1px solid #eee; }
 .features .feature .feature-content { clear:both; text-align:justity; margin: 2%;}
 
+.plus-icon {
+	width: 45px;
+	height: 45px;
+	margin: 0 auto;
+	background-image: url("http://localhost/fiamma/miweb/wp-content/uploads/2016/10/plus-icon.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.minus-icon {
+	width: 45px;
+	height: 45px;
+	margin: 0 auto;
+	background-image: url("http://localhost/fiamma/miweb/wp-content/uploads/2016/10/minus-icon.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.icon-opacity {
+	opacity: 0.5;
+}
 
 .slice-button {
 	margin-left: 45%;

@@ -218,6 +218,118 @@ LAYOUT
 NAVIGATION
 -------------------------------------------------------------- */
 
+.content-size {
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+	width: 300px;
+    height: 300px;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.image-1 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espaldatriangulogif-1.gif);
+}
+
+.image-2 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espaldadelante.gif);	
+}
+
+.image-3 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espaldadetras.gif);
+}
+
+.image-4 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/remogif-1.gif);
+}
+
+.image-5 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_hombro4-1.jpg);
+}
+
+.image-6 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_triceps-2.jpg);
+}
+
+.image-7 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/triceps2-2.gif);
+}
+
+.image-8 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espalda06-1.gif);
+}
+
+.image-9 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espaldatriangulogif-1.gif);
+}
+
+.image-10 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_hombro-1.jpg);
+}
+
+.image-11 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_hombro3-1.jpg);
+}
+
+.image-12 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_hombro4-1.jpg);
+}
+
+.image-13 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_hombro1-1.jpg);
+}
+
+.image-14 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/cuadriceps-1.gif);
+}
+
+.image-15 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/cuadriceps1-1.gif);
+}
+
+.image-16 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/sentadilla-1.png);
+}
+
+.image-17 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/zancada-1.png);
+}
+
+.image-18 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/remogif-1.gif);
+}
+
+.image-19 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_biceps-1.jpg);
+}
+
+.image-20 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_biceps2-1.jpg);
+}
+
+.image-21 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_biceps1-1.jpg);
+}
+
+.image-22 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/biceps-1.jpg);
+}
+
+.image-23 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/pec1-1.gif);
+}
+
+.image-24 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/pec2-1.gif);
+}
+
+.image-25 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/pecho2-1-300x145.jpg);
+}
+
 /* TOP MENU */
 .topmenu { float:left; }
 
@@ -374,7 +486,7 @@ COMMENTS
 
 
 /* COMMENTS */
-.comments { clear:both; margin:0; }
+/*.comments { clear:both; margin:0; }
 .commentlist { list-style:none; padding:0; margin:0 0 30px; }
 .comment { list-style:none; margin:0 0 30px; padding:0; }
 .comment.bypostauthor > .comment-body { }
@@ -389,33 +501,38 @@ COMMENTS
 .comment .comment-options a { display:inline-block; padding:6px 10px; margin:0; border-left:1px solid #ddd; }
 .comment .comment-reply-link:before { font-family:'fontawesome'; content:'\f112'; margin-right:8px; font-size:0.8em; opacity:0.8; }
 .comment .comment-options a:first-child { margin:0; border-left:none; }
-/* Contents Styling for Comment Body */
+/* Contents Styling for Comment Body 
 .comment .comment-content ul, .comment .comment-content ol { margin-bottom:18px; }
 .comment .comment-content p:last-child { margin-bottom:6px; }
 .comment .comment-content blockquote p:last-child { margin-bottom:24px; }
-/* Nested Comments */
+/* Nested Comments 
 .comment .children { list-style:none; margin:30px 0 0 50px; }
-/* Pingbacks & Trackbacks */
+/* Pingbacks & Trackbacks 
 .comments ol.pinglist { margin:0; }
 .comments .pingback { list-style:none; margin:0 0 10px 0; }
 .comments .pingback .url { font-style:italic; }
 
 
-/* COMMENT FORM */
+/* COMMENT FORM 
 .comment-respond { margin:30px 0; overflow:hidden; position:relative; }
 .comment-respond p { overflow:hidden; }
-/* Fields */
+/* Fields 
 .comment-respond .comment-notes { display:none; }
 .comment-respond .required { color:#ff4b33; }
 .comment-respond label{ display:block; padding:5px 0; }
 .comment-respond textarea{ height:200px; max-height:400px; min-height:200px; resize:vertical; }
-/* Nested Form */
+/* Nested Form 
 #cancel-comment-reply-link { float:right; display:block; font-size:0.9em; }
-/* Allowed Tags */
+/* Allowed Tags 
 .comment-respond .form-allowed-tags { display:none; color:#888; font-size:0.9em; }
 .comment-respond .form-allowed-tags code { display:block; font-size:0.9em; }
-.comment-respond .form-submit { }
-
+.comment-respond .form-submit { }*/
+.comments {
+	display:none;
+}
+#respond {
+	display:none;
+}
 
 /* --------------------------------------------------------------
 RESPONSIVE STYLES

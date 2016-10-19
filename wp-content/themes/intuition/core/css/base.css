@@ -623,8 +623,7 @@ WIDGETS
 /* RECENT POSTS WIDGET */
 .widget_recent_entries .post-date { display:block; font-size:0.8em; }
 
-
-/* RECENT COMMENTS WIDGET */
+/* RECENT COMMENTS WIDGET 
 .widget_recent_comments .post-date { display:block; font-size:0.8em; }
 .widget_recent_comments .recentcomments { color:#aaa; display:block; }
 .widget_recent_comments .recentcomments > a { display:block; font-size:0.8em; }

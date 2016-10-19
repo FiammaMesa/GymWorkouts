@@ -17,6 +17,7 @@ function realizaProceso(tipoejercicios){
                         $(".result").html("Procesando, espere por favor...");
                 },
                 success:  function (response) {
+                	
                         $(".result").html(response);
                 }
         });

@@ -231,27 +231,27 @@ NAVIGATION
 }
 
 .image-1 {
-	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espaldatriangulogif-1.gif);
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espaldadelante.gif);
 }
 
 .image-2 {
-	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espaldadelante.gif);	
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espaldatriangulogif-1.gif);	
 }
 
 .image-3 {
-	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espaldadetras.gif);
-}
-
-.image-4 {
 	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/remogif-1.gif);
 }
 
+.image-4 {
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espaldadetras.gif);
+}
+
 .image-5 {
-	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_hombro4-1.jpg);
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espalda06-1.gif);
 }
 
 .image-6 {
-	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_triceps-2.jpg);
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_hombro4-1.jpg);
 }
 
 .image-7 {
@@ -259,7 +259,7 @@ NAVIGATION
 }
 
 .image-8 {
-	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/espalda06-1.gif);
+	background-image: url(http://localhost/fiamma/miweb/wp-content/uploads/2016/10/ejercicios_triceps-2.jpg);
 }
 
 .image-9 {

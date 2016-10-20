@@ -4,75 +4,30 @@ $category = $_POST['titulo'];
 switch ($category) {
 	case "Espalda Tríceps":
 		global $wpdb;
-		$result = $wpdb->get_results('SELECT post_content
+		$result = $wpdb->get_results('SELECT *
 									  FROM wp_posts
 									  WHERE ID IN (SELECT object_id
 									  				FROM wp_term_relationships
 									  				WHERE term_taxonomy_id IN (SELECT term_id
 									  											FROM wp_terms
-									  											WHERE slug="triceps")
+									  											WHERE ((slug="triceps")or(slug="dorsales")or(slug="trapecios")or(slug="lumbares")))
 													)
 									');
 		$final = $result;
 
-		$result = $wpdb->get_results('SELECT post_content
-									  FROM wp_posts
-									  WHERE ID IN (SELECT object_id
-									  				FROM wp_term_relationships
-									  				WHERE term_taxonomy_id IN (SELECT term_id
-									  											FROM wp_terms
-									  											WHERE slug="dorsales")
-													)
-									');
-		
-		foreach($result as $item){
-			if (!in_array($item, $final)){
-				array_push($final, $item);
-			}
-		}
-
-		$result = $wpdb->get_results('SELECT post_content
-									  FROM wp_posts
-									  WHERE ID IN (SELECT object_id
-									  				FROM wp_term_relationships
-									  				WHERE term_taxonomy_id IN (SELECT term_id
-									  											FROM wp_terms
-									  											WHERE slug="trapecios")
-													)
-									');
-
-		foreach($result as $item){
-			if (!in_array($item, $final)){
-				array_push($final, $item);
-			}
-		}
-
-		$result = $wpdb->get_results('SELECT post_content
-									  FROM wp_posts
-									  WHERE ID IN (SELECT object_id
-									  				FROM wp_term_relationships
-									  				WHERE term_taxonomy_id IN (SELECT term_id
-									  											FROM wp_terms
-									  											WHERE slug="lumbares")
-													)
-									');
-		foreach($result as $item){
-			if (!in_array($item, $final)){
-				array_push($final, $item);
-			}
-		}
 
 		$num = 0;
-		foreach($final as $item){
+		foreach($result as $item){
 			$pos = strpos($item->post_content, "src=");
 			$fin = strpos("alt=", $item);
 			$num ++;
 			if ($pos) {
 				for ($i = $pos + 4; $i< $fin - 1; $i++){
-					array_push($final1, $item[i]);
+					array_push($final, $item[i]);
 				}
+				echo "<a href=".$item->guid.">";
 				echo "<div class='content-size image-".$num."'></div>";
-
+				echo "</a>";
 			
 			}
 			$final = "";
@@ -100,8 +55,9 @@ switch ($category) {
 				for ($i = $pos + 4; $i< $fin - 1; $i++){
 					array_push($final, $item[i]);
 				}
+				echo "<a href=".$item->guid.">";
 				echo "<div class='content-size image-".$num."'></div>";
-
+				echo "</a>";
 			
 			}
 			$final = "";
@@ -129,8 +85,9 @@ switch ($category) {
 				for ($i = $pos + 4; $i< $fin - 1; $i++){
 					array_push($final, $item[i]);
 				}
+				echo "<a href=".$item->guid.">";
 				echo "<div class='content-size image-".$num."'></div>";
-
+				echo "</a>";
 			
 			}
 			$final = "";

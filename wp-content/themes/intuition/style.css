@@ -534,6 +534,50 @@ COMMENTS
 	display:none;
 }
 
+.user-comments {
+	color: #bebebe;
+	margin: 5% 5% 2% 5%;
+}
+
+.message-comments {
+	margin-left: 8%;
+	margin-right: 8%;
+	padding: 3%;
+	background-color: white;
+}
+
+.date-comments {
+	font-size: 70%;
+	color: #bebebe;
+	float: right;
+	font-style: italic;
+	margin-right: 5%;
+	padding: 1%;
+	padding-right: 5%;
+	text-align: right;
+}
+
+.button-comments, .button-comments:visited, input[type=submit] { 
+	border-radius:2px; 
+	border:none; 
+	text-shadow:none; 
+	background:#F59A0A; 
+	letter-spacing:2px;
+	float: right;
+	margin-top: 10%;
+	color: white;
+	text-align: center;
+	width: 25%;
+}
+
+.button-comments:last-child{
+	margin-right:3%;
+}
+
+.button-comments:hover, input[type=submit]:hover { 
+	background:#F59A0A; 
+}
+
 /* --------------------------------------------------------------
 RESPONSIVE STYLES
 -------------------------------------------------------------- */

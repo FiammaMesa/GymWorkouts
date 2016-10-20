@@ -7,7 +7,6 @@ $user = get_current_user_id();
 
 date_default_timezone_set('Europe/London');
 $date = date('Y-m-d H:i:s', time());
-echo $date;
 
 	if ($user > 0) {
 		
@@ -33,7 +32,24 @@ $result = $wpdb->get_results('SELECT user_nicename
 								FROM wp_users
 								WHERE ID IN (SELECT user_id
 											FROM comments)');
-foreach ($result as $item){
+
+/*foreach ($result as $item){
 	echo $item->user_nicename;
+}*/
+
+$my_query="SELECT guid
+			FROM wp_posts
+			WHERE ID='".$post_id."'";
+
+
+
+
+$url = $wpdb->get_results($my_query);
+foreach($url as $item) {
+	$return = "Location: ".$item->guid;
+break;
 }
+
+header($return);
+
 ?>

@@ -37,10 +37,19 @@
 
 						<div class="date-comments"><?php
 							echo $item->fecha_edicion;
-							
+
 							?><div class="buttons">
-								<div class="button-comments">Borrar</div>
-								<div class="button-comments">Editar</div>
+								
+								<form name="delete" action="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/delete-comments.php" method="post">
+									<input name="identificador" type="hidden" value=<?php echo $item->identificador ?> />
+									<input name="post_id" type="hidden" value="243"/>
+									<button name="delete" type="submit" class="button-comments">Borrar</button>
+								</form>
+								<form name="edit" action="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/edit-comments.php">
+									<button name="edit" type="submit" class="button-comments">Editar</button>
+								</form>
+								
+								
 
 							</div>
 

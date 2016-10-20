@@ -564,10 +564,10 @@ COMMENTS
 	background:#F59A0A; 
 	letter-spacing:2px;
 	float: right;
-	margin-top: 10%;
+	margin-top: 6%;
 	color: white;
 	text-align: center;
-	width: 25%;
+	width: 100%;
 }
 
 .button-comments:last-child{

@@ -2,6 +2,7 @@
 	<!--<div class="post-image">
 		<?php cpotheme_postpage_image(); ?>		
 	</div>-->	
+	<?php $current_post_id = get_the_ID(); ?>
 	<div class="post-body">
 		<!--<?php cpotheme_postpage_title(); ?>
 		<div class="post-byline">
@@ -18,11 +19,12 @@
 		<div class="history-comments">
 			<?php 
 			global $wpdb;
-			$result = $wpdb->get_results('SELECT user_nicename, mensaje, comments.id as identificador, fecha_edicion, user_id
+			$my_query = ('SELECT user_nicename, mensaje, comments.id as identificador, fecha_edicion, user_id, post_id
 									     FROM wp_users, comments
-									     WHERE (wp_users.ID = comments.user_id)
+									     WHERE (wp_users.ID = comments.user_id) and (post_id = "'.$current_post_id.'")
 									     ORDER BY fecha_edicion desc
 										');
+			$result = $wpdb->get_results($my_query);
 			
 			foreach ($result as $item){
 	
@@ -42,7 +44,7 @@
 								
 								<form name="delete" action="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/delete-comments.php" method="post">
 									<input name="identificador" type="hidden" value=<?php echo $item->identificador ?> />
-									<input name="post_id" type="hidden" value="243"/>
+									<input name="post_id" type="hidden" value=<?php echo $item->post_id ?> />
 									<button name="delete" type="submit" class="button-comments">Borrar</button>
 								</form>
 								<form name="edit" action="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/edit-comments.php">

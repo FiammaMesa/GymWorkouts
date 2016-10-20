@@ -33,9 +33,6 @@ $result = $wpdb->get_results('SELECT user_nicename
 								WHERE ID IN (SELECT user_id
 											FROM comments)');
 
-/*foreach ($result as $item){
-	echo $item->user_nicename;
-}*/
 
 $my_query="SELECT guid
 			FROM wp_posts

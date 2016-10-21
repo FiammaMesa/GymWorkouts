@@ -31,7 +31,9 @@
 		        									 ');
 		        		foreach ($results as $result){
 		        			?> <div class="content-samples column-narrow col4"> <?php
-		        				echo $result->post_content;
+		        					$pos = strpos($result->post_content, "<form");
+			        				$item = substr($result->post_content, 0, $pos-30);
+			        				echo $item;
 		        			?> </div> <?php
 		        		}
 		        	?>
@@ -59,7 +61,9 @@
 		        									 ');
 		        		foreach ($results as $result){
 		        			?> <div class="content-samples column-narrow col4"> <?php
-		        				echo $result->post_content;
+		        					$pos = strpos($result->post_content, "<form");
+			        				$item = substr($result->post_content, 0, $pos-30);
+			        				echo $item;
 		        			?> </div> <?php
 		        		}
 		        	?>

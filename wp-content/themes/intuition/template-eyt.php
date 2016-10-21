@@ -21,53 +21,20 @@
 		        		global $wpdb;
 		        		$results = $wpdb->get_results('SELECT * 
 														FROM wp_posts 
-														WHERE ID IN( SELECT object_id
+														WHERE ID IN(SELECT object_id
 																	FROM wp_term_relationships
 																	WHERE term_taxonomy_id IN ( SELECT term_id 
 																								FROM wp_terms 
-																								WHERE slug="dorsales") 
-		        													)
+																								WHERE ((slug="dorsales") or (slug="lumbares") or (slug="trapecios")))
+																	)
 		        									 ');
+		        		//"<div class='mycomments'>"
 		        		foreach ($results as $result){
 		        			?> <div class="content-samples column-narrow col4"> <?php
-		        				echo $result->post_content;
+			        				$pos = strpos($result->post_content, "<form");
+			        				$item = substr($result->post_content, 0, $pos-30);
+			        				echo $item;
 		        			?> </div> <?php
-		        		}
-
-		        		global $wpdb;
-		        		$exits = $wpdb->get_results('SELECT * 
-														FROM wp_posts 
-														WHERE ID IN( SELECT object_id
-																	FROM wp_term_relationships
-																	WHERE term_taxonomy_id IN ( SELECT term_id 
-																								FROM wp_terms 
-																								WHERE slug="lumbares") 
-		        													)
-		        									 ');
-		        		foreach ($exits as $exit){
-		        			if (!in_array($exit, $results)){
-		        				?> <div class="content-samples column-narrow col4"> <?php
-		        					echo $exit->post_content;
-		        				?> </div> <?php
-		        			}
-		        		}
-
-		        		global $wpdb;
-		        		$outs = $wpdb->get_results('SELECT * 
-														FROM wp_posts 
-														WHERE ID IN( SELECT object_id
-																	FROM wp_term_relationships
-																	WHERE term_taxonomy_id IN ( SELECT term_id 
-																								FROM wp_terms 
-																								WHERE slug="trapecios") 
-		        													)
-		        									 ');
-		        		foreach ($outs as $out){
-		        			if ((!in_array($out, $results)) && (!in_array($out, $exits))){
-		        				?> <div class="content-samples column-narrow col4"> <?php
-		        					echo $out->post_content;
-		        				?> </div> <?php
-		        			}
 		        		}
 
 		        	?>
@@ -82,8 +49,8 @@
 						<h2 class="feature-content">Ejercicios de Tríceps</h2>
 					</div>
 					<div class="row">
-					<?php
-		        		global $wpdb;
+						<?php
+		        		
 		        		$results = $wpdb->get_results('SELECT * 
 														FROM wp_posts 
 														WHERE ID IN( SELECT object_id
@@ -95,10 +62,12 @@
 		        									 ');
 		        		foreach ($results as $result){
 		        			?> <div class="content-samples column-narrow col4"> <?php
-		        				echo $result->post_content;
+									$pos = strpos($result->post_content, "<form");
+			        				$item = substr($result->post_content, 0, $pos-30);
+			        				echo $item;
 		        			?> </div> <?php
 		        		}
-		        	?>
+		        		?>
 						<div class="content-imgs column-narrow col4">
 				        	
 						</div>

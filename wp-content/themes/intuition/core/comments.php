@@ -34,12 +34,11 @@ $result = $wpdb->get_results('SELECT user_nicename
 											FROM comments)');
 
 
+/* ------- REDIRECCIÓN ------*/
+
 $my_query="SELECT guid
 			FROM wp_posts
 			WHERE ID='".$post_id."'";
-
-
-
 
 $url = $wpdb->get_results($my_query);
 foreach($url as $item) {

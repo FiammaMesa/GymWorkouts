@@ -26,33 +26,16 @@
 																	FROM wp_term_relationships
 																	WHERE term_taxonomy_id IN ( SELECT term_id 
 																								FROM wp_terms 
-																								WHERE slug="cuadriceps") 
+																								WHERE ((slug="cuadriceps") or (slug="aductores") or (slug="gluteos") or (slug="abductores") or (slug="isquiotibiales")))
 		        													)
 		        									 ');
 		        		foreach ($results as $result){
 		        			?> <div class="content-samples column-narrow col4"> <?php
-		        				echo $result->post_content;
+		        					$pos = strpos($result->post_content, "<form");
+			        				$item = substr($result->post_content, 0, $pos-30);
+			        				echo $item;
 		        			?> </div> <?php
 		        		}
-
-		        		global $wpdb;
-		        		$exits = $wpdb->get_results('SELECT * 
-														FROM wp_posts 
-														WHERE ID IN( SELECT object_id
-																	FROM wp_term_relationships
-																	WHERE term_taxonomy_id IN ( SELECT term_id 
-																								FROM wp_terms 
-																								WHERE slug="aductores") 
-		        													)
-		        									 ');
-		        		foreach ($exits as $exit){
-		        			if (!in_array($exit, $results)){
-		        				?> <div class="content-samples column-narrow col4"> <?php
-		        					echo $exit->post_content;
-		        				?> </div> <?php
-		        			}
-		        		}
-
 
 		        	?>
 
@@ -80,7 +63,9 @@
 		        									 ');
 		        		foreach ($results as $result){
 		        			?> <div class="content-samples column-narrow col4"> <?php
-		        				echo $result->post_content;
+		        					$pos = strpos($result->post_content, "<form");
+			        				$item = substr($result->post_content, 0, $pos-30);
+			        				echo $item;
 		        			?> </div> <?php
 		        		}
 		        		?>

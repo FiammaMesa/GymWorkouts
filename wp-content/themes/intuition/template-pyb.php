@@ -33,7 +33,9 @@
 		        			?> <div class="content-samples column-narrow col4"> <?php
 		        					$pos = strpos($result->post_content, "<form");
 			        				$item = substr($result->post_content, 0, $pos-30);
+			        				echo "<a href=".$item->guid.">";
 			        				echo $item;
+			        				echo "</a>";
 		        			?> </div> <?php
 		        		}
 		        	?>
@@ -63,7 +65,9 @@
 		        			?> <div class="content-samples column-narrow col4"> <?php
 		        					$pos = strpos($result->post_content, "<form");
 			        				$item = substr($result->post_content, 0, $pos-30);
+			        				echo "<a href=".$item->guid.">";
 			        				echo $item;
+			        				echo "</a>";
 		        			?> </div> <?php
 		        		}
 		        	?>

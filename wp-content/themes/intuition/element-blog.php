@@ -43,11 +43,10 @@
 
 							?><div class="buttons">
 								
-								<form name="delete" action="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/delete-comments.php" method="post">
-									<input name="identificador" type="hidden" value=<?php echo $item->identificador ?> />
-									<input name="post_id" type="hidden" value=<?php echo $item->post_id ?> />
-									<button name="delete" type="submit" class="button-comments">Borrar</button>
-								</form>
+								
+									
+									<button name="delete" data-toggle="modal" data-target=<?php echo "#delete-modal-".$identificador; ?> class="button-comments">Borrar</button>
+						
 								<!--<form name="edit" action="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/edit-comments.php">-
 									<input name="message" type="hidden" value=<?php echo $item->mensaje ?> />
 									<input name="identificador" type="hidden" value=<?php echo $item->identificador ?> />
@@ -68,7 +67,7 @@
 					</div>
 
 
-					<!-- ************ MODAL ************ -->
+					<!-- ************ MODAL EDITAR ************ -->
 
 					<div class="modal fade" id=<?php echo "edit-modal-".$identificador; ?> tabindex="-1" role="dialog">
 						<div class="modal-dialog" role="document">
@@ -96,6 +95,31 @@
 					</div><!-- /.modal -->
 
 
+					<!-- ************ MODAL BORRAR ************ -->
+
+					<div class="modal fade" id=<?php echo "delete-modal-".$identificador; ?> tabindex="-1" role="dialog">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title">Borrar comentario</h4>
+								</div>
+
+								<form method="post" action="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/delete-comments.php">
+									<div class="modal-body">
+										<h4>¿Está seguro que desea borrar el comentario?
+									</div>
+									<div class="modal-footer">
+										<input name="identificador" type="hidden" value=<?php echo $item->identificador ?> />
+									<input name="post_id" type="hidden" value=<?php echo $item->post_id ?> />
+										<button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+										<button type="submit" class="btn btn-primary">SÍ</button>
+									</div>
+								</form>
+
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
 
 
 

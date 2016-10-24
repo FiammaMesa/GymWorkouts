@@ -16,13 +16,13 @@ GENERAL ELEMENTS
 -------------------------------------------------------------- */
 
 /* BODY */
-body { font-family:'Open Sans', Arial, Helvetica, sans-serif; background:#fff; color:#777; font-size:0.875em; line-height:1.6; }
+body { font-family:'Open Sans', Arial, Helvetica, sans-serif; background:#fff; color:#777; font-size:1.275em; line-height:1.6; }
 .lines {
 	line-height: 0.6;
 }
 
 /* HEADINGS */
-h1, h2, h3, h4, h5, h6 { color:#444; font-weight:300; line-height:1.2; margin:12px 0 24px; }
+h1, h2, h3, h4, h5, h6 { color:#444; font-weight:300; line-height:1.2; margin:20px 0 37px; }
 h1 { font-size:2.5em; } 
 h2 { font-size:2em; } 
 h3 { font-size:1.5em; } 
@@ -156,7 +156,7 @@ LAYOUT
 /* HOMEPAGE FEATURES */
 .feature-img1 { width: 100%; height: 234px; background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/back.jpg); background-size: cover; background-repeat: no-repeat;}
 .feature-img2 { width: 100%; height: 234px; background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/leg.jpg); background-size: cover; background-repeat: no-repeat; background-position: 70% 30%;}
-.feature-img3 { width: 100%; height: 234px; background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/bicep.jpg); background-size: cover; background-repeat: no-repeat; background-position: 70% 30%;}
+.feature-img3 { width: 100%; height: 234px; background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/bicep.png); background-size: cover; background-repeat: no-repeat; background-position: 70% 30%;}
 
 .features { margin:30px 0 30px; }
 .features-heading { margin:0; padding:0; line-height:1.2; font-size:2em; }
@@ -167,6 +167,11 @@ LAYOUT
 .features .feature .feature-body { padding:0 30px 5px; }
 .features .feature .feature-title { margin:20px 0; font-size:1.6em; text-align:center; padding:0 0 20px; border-bottom:1px solid #eee; }
 .features .feature .feature-content { clear:both; text-align:justity; margin: 2%;}
+
+#main .container {
+	width: 100%;
+}
+
 
 .plus-icon {
 	width: 45px;
@@ -226,8 +231,8 @@ NAVIGATION
 	width: 300px;
     height: 300px;
     float: left;
-    margin-right: 1%;
-    margin-bottom: 1%;
+    margin-right: 6%;
+    margin-bottom: 3%;
 }
 
 .image-1 {
@@ -563,7 +568,7 @@ COMMENTS
 	text-shadow:none; 
 	background:#F59A0A; 
 	letter-spacing:2px;
-	float: right;
+	/*float: right;*/
 	margin-top: 6%;
 	color: white;
 	text-align: center;
@@ -595,7 +600,6 @@ RESPONSIVE STYLES
 	.feature-img1 { 
 		width: 100%;
 		height: 136px; 
-		background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/back.jpg); 
 		background-size: cover; 
 		background-repeat: no-repeat;
 	}
@@ -603,7 +607,6 @@ RESPONSIVE STYLES
 	.feature-img2 { 
 		width: 100%; 
 		height: 136px; 
-		background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/leg.jpg); 
 		background-size: cover; 
 		background-repeat: no-repeat; 
 		background-position: 70% 30%;
@@ -612,7 +615,6 @@ RESPONSIVE STYLES
 	.feature-img3 { 
 		width: 100%; 
 		height: 136px; 
-		background-image: url(/fiamma/miweb/wp-content/uploads/2016/10/bicep.jpg); 
 		background-size: cover; 
 		background-repeat: no-repeat; 
 		background-position: 70% 30%;
@@ -635,6 +637,23 @@ RESPONSIVE STYLES
 /* TABLET PORTRAIT */
 
 @media (max-width: 1024px){
+
+	#features .container {
+ 		width: 100%;
+ 	}
+ 
+ 	.content-size {
+ 		background-color: white;
+ 		background-repeat: no-repeat;
+ 		background-position: 50% 50%;
+ 		background-size: contain;
+ 		width: 292px;
+ 	    height: 292px;
+ 	    float: left;
+ 	    margin-right: 1%;
+ 	    margin-bottom: 1%;
+ 	}
+
 	.pagetitle {
 	    overflow: hidden;
 	    padding: 4% 0 0 4%;
@@ -693,12 +712,17 @@ RESPONSIVE STYLES
 	    color: #444;
 	    font-weight: 300;
 	    line-height: 1.2;
-	    margin: 24px 0 50px 68px;
+	    /*margin: 24px 0 36px 17px;*/
+	    margin: 24px 0 50px 7px;
 	}
 }
 
 
 @media (max-width: 767px) {
+
+	.content-size {
+ 		margin-left: 7%;
+ 	}
 
 	.portfolio-item-title h3 {
 		margin: 0;

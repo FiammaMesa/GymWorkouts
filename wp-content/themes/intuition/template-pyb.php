@@ -18,7 +18,6 @@
 					</div>
 
 					<?php
-
 		        		global $wpdb;
 		        		$results = $wpdb->get_results('SELECT * 
 														FROM wp_posts 
@@ -31,7 +30,11 @@
 		        									 ');
 		        		foreach ($results as $result){
 		        			?> <div class="content-samples column-narrow col4"> <?php
-		        				echo $result->post_content;
+		        					$pos = strpos($result->post_content, "<form");
+			        				$item = substr($result->post_content, 0, $pos-30);
+			        				echo "<a href=".$result->guid.">";
+			        				echo $item;
+			        				echo "</a>";
 		        			?> </div> <?php
 		        		}
 		        	?>
@@ -46,7 +49,6 @@
 					<div class="row">
 
 						<?php
-
 		        		global $wpdb;
 		        		$results = $wpdb->get_results('SELECT * 
 														FROM wp_posts 
@@ -59,7 +61,11 @@
 		        									 ');
 		        		foreach ($results as $result){
 		        			?> <div class="content-samples column-narrow col4"> <?php
-		        				echo $result->post_content;
+		        					$pos = strpos($result->post_content, "<form");
+			        				$item = substr($result->post_content, 0, $pos-30);
+			        				echo "<a href=".$result->guid.">";
+			        				echo $item;
+			        				echo "</a>";
 		        			?> </div> <?php
 		        		}
 		        	?>

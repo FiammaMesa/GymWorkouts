@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<link rel="stylesheet" type="text/css" href="http://localhost/fiamma/miweb/wp-content/themes/intuition/bootstrap/css/bootstrap.css">
     <?php wp_head(); ?>
 </head>
 

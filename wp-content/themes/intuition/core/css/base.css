@@ -540,7 +540,7 @@ DESIGN ELEMENTS
 .column-narrow { display:block; float:left; margin-right:2%; }
 .last-column {margin-right: 0 !important;}
 .column-narrow.col2 { width:49%; }
-.column-narrow.col3 { width:32%; }
+.column-narrow.col3 { width:31%; }
 .column-narrow.col3x2 { width:66%; }
 .column-narrow.col4 { width:23.5%; }
 .column-narrow.col4x2 { width:49%; }

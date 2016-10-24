@@ -21,8 +21,8 @@
 
 
 	             <div class="imagenes">
-	                  <div class="imagen1"><img src="http://localhost/fiamma/miweb/wp-content/uploads/2016/10/girloffood.png" width="500" height="350"/></div>
-	                  <div class="imagen2"><img src="http://localhost/fiamma/miweb/wp-content/uploads/2016/10/musculos.png" width="500" height="350"/></div>
+	                  <div class="imagen1"><img src="/fiamma/miweb/wp-content/uploads/2016/10/girloffood.png" width="500" height="350"/></div>
+	                  <div class="imagen2"><img src="/fiamma/miweb/wp-content/uploads/2016/10/musculos.png" width="500" height="350"/></div>
 	             </div>
 		</div>
 </div>

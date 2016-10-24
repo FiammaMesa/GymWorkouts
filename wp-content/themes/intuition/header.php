@@ -3,7 +3,7 @@
 <head>
 	<meta property="og:title" content="FitNess Web Page. Fämia" /> 
 
-	<link rel="stylesheet" type="text/css" href="http://localhost/fiamma/miweb/wp-content/themes/intuition/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/fiamma/miweb/wp-content/themes/intuition/bootstrap/css/bootstrap.css">
     <?php wp_head(); ?>
 </head>
 

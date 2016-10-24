@@ -16,7 +16,7 @@
 
 					<div class="column-narrow col3">
 
-						<div class="feature"><a href="http://localhost/fiamma/miweb/index.php/ejercicios-de-espalda-y-triceps/"><div class="feature-img1"></div></a><a href="http://localhost/fiamma/miweb/index.php/ejercicios-de-espalda-y-triceps/"><h3 class="feature-title">Espalda Tríceps</h3></a>
+						<div class="feature"><a href="/fiamma/miweb/index.php/ejercicios-de-espalda-y-triceps/"><div class="feature-img1"></div></a><a href="/fiamma/miweb/index.php/ejercicios-de-espalda-y-triceps/"><h3 class="feature-title">Espalda Tríceps</h3></a>
 							<div class="feature-content">
 								<p>Aquí encontraras una colección de ejercicios para espalda y triceps, ¡Recuerda escoger como mínimo tres de cada uno!</p>
 							</div>
@@ -44,7 +44,7 @@
 				?>
 					<div class="column-narrow col3">
 
-						<div class="feature"><a href="http://localhost/fiamma/miweb/index.php/ejercicios-de-piernas-y-hombros/"><div class="feature-img2"></div></a><a href="http://localhost/fiamma/miweb/index.php/ejercicios-de-piernas-y-hombros/"><h3 class="feature-title">Piernas Hombros</h3></a>
+						<div class="feature"><a href="/fiamma/miweb/index.php/ejercicios-de-piernas-y-hombros/"><div class="feature-img2"></div></a><a href="/fiamma/miweb/index.php/ejercicios-de-piernas-y-hombros/"><h3 class="feature-title">Piernas Hombros</h3></a>
 							<div class="feature-content">
 								<p>Aquí encontraras una colección de ejercicios de piernas y hombros, ¡Recuerda escoger como mínimo tres de cada uno!</p>
 							</div>
@@ -72,7 +72,7 @@
 				?>
 					<div class="column-narrow col3 last-column">
 
-						<div class="feature"><a href="http://localhost/fiamma/miweb/index.php/ejercicios-de-pecho-y-biceps/"><div class="feature-img3"></div></a><a href="http://localhost/fiamma/miweb/index.php/ejercicios-de-pecho-y-biceps/"><h3 class="feature-title">Pecho Bíceps</h3></a>
+						<div class="feature"><a href="/fiamma/miweb/index.php/ejercicios-de-pecho-y-biceps/"><div class="feature-img3"></div></a><a href="/fiamma/miweb/index.php/ejercicios-de-pecho-y-biceps/"><h3 class="feature-title">Pecho Bíceps</h3></a>
 							<div class="feature-content">
 								<p>Aquí encontraras una colección de distintos ejercicios de pecho y bíceps, ¡Recuerda escoger como mínimo tres de cada uno!</p>
 							</div>

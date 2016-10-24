@@ -17,7 +17,7 @@
 	<?php wp_footer(); ?>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/scripts/show_video.js"></script>
-<script type="text/javascript" src="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/scripts/search.js"></script>
-<script type="text/javascript" src="http://localhost/fiamma/miweb/wp-content/themes/intuition/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="/fiamma/miweb/wp-content/themes/intuition/core/scripts/show_video.js"></script>
+<script type="text/javascript" src="/fiamma/miweb/wp-content/themes/intuition/core/scripts/search.js"></script>
+<script type="text/javascript" src="/fiamma/miweb/wp-content/themes/intuition/bootstrap/js/bootstrap.js"></script>
 </html>

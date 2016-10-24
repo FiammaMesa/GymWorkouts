@@ -1,4 +1,4 @@
-<?php /* Template Name: Pecho y Biceps */ ?>
+<?php /* Template Name: Piernas y Hombros*/ ?>
 <?php get_header(); ?>
 
 <?php get_template_part('element', 'page-header'); ?>
@@ -14,7 +14,7 @@
 				<div class="row">
 
 					<div class="content-text">
-						<h2 class="feature-content">Ejercicios de Pecho</h2>
+						<h2 class="feature-content">Ejercicios de Piernas</h2>
 					</div>
 
 					<?php
@@ -25,26 +25,25 @@
 																	FROM wp_term_relationships
 																	WHERE term_taxonomy_id IN ( SELECT term_id 
 																								FROM wp_terms 
-																								WHERE slug="pecho") 
+																								WHERE ((slug="cuadriceps") or (slug="isquiotibiales") or (slug="gemelos") or (slug="aductores") or (slug="abductores") or (slug="gluteos"))) 
 		        													)
 		        									 ');
 		        		foreach ($results as $result){
-		        			?> <div class="content-samples column-narrow col4"> <?php
+		        			?> <div class="content-samples column-narrow col3"> <?php
 		        					$pos = strpos($result->post_content, "<form");
 			        				$item = substr($result->post_content, 0, $pos-30);
 			        				echo "<a href=".$result->guid.">";
 			        				echo $item;
 			        				echo "</a>";
 		        			?> </div> <?php
-		        		}
-		        	?>
+		        		}?>
 
 				</div>
 
 				<div class="row">
 					
 					<div class="content-text">
-						<h2 class="feature-content">Ejercicios de Bíceps</h2>
+						<h2 class="feature-content">Ejercicios de Hombros</h2>
 					</div>
 					<div class="row">
 
@@ -56,11 +55,11 @@
 																	FROM wp_term_relationships
 																	WHERE term_taxonomy_id IN ( SELECT term_id 
 																								FROM wp_terms 
-																								WHERE slug="biceps") 
+																								WHERE slug="deltoides") 
 		        													)
 		        									 ');
 		        		foreach ($results as $result){
-		        			?> <div class="content-samples column-narrow col4"> <?php
+		        			?> <div class="content-samples column-narrow col3"> <?php
 		        					$pos = strpos($result->post_content, "<form");
 			        				$item = substr($result->post_content, 0, $pos-30);
 			        				echo "<a href=".$result->guid.">";
@@ -68,7 +67,8 @@
 			        				echo "</a>";
 		        			?> </div> <?php
 		        		}
-		        	?>
+		        		?>
+
 					</div>
 				
 				</div>

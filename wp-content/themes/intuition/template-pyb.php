@@ -29,7 +29,7 @@
 		        													)
 		        									 ');
 		        		foreach ($results as $result){
-		        			?> <div class="content-samples column-narrow col4"> <?php
+		        			?> <div class="content-samples column-narrow col3"> <?php
 		        					$pos = strpos($result->post_content, "<form");
 			        				$item = substr($result->post_content, 0, $pos-30);
 			        				echo "<a href=".$result->guid.">";
@@ -60,7 +60,7 @@
 		        													)
 		        									 ');
 		        		foreach ($results as $result){
-		        			?> <div class="content-samples column-narrow col4"> <?php
+		        			?> <div class="content-samples column-narrow col3"> <?php
 		        					$pos = strpos($result->post_content, "<form");
 			        				$item = substr($result->post_content, 0, $pos-30);
 			        				echo "<a href=".$result->guid.">";

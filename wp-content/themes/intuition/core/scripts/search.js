@@ -11,7 +11,7 @@ function realizaProceso(tipoejercicios){
         };
         $.ajax({
                 data:  parametros,
-                url:   'http://localhost/fiamma/miweb/wp-content/themes/intuition/core/ajax-search.php',
+                url:   '/fiamma/miweb/wp-content/themes/intuition/core/ajax-search.php',
                 type:  'post',
                 beforeSend: function () {
                         $(".result").html("Procesando, espere por favor...");

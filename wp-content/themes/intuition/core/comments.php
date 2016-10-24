@@ -34,7 +34,7 @@ $my_query="SELECT guid
 			WHERE ID='".$post_id."'";
 $url = $wpdb->get_results($my_query);
 foreach($url as $item) {
-	$return = "Location: ".$item->guid;
+	$return = "Location: ".$item->guid."#history-comments";
 break;
 }
 header($return);

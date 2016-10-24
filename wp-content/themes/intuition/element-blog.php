@@ -16,7 +16,7 @@
 			<?php cpotheme_postpage_content(); ?>
 		</div>
 
-		<div class="history-comments">
+		<div class="history-comments" id="history-comments">
 			<?php 
 			global $wpdb;
 			$my_query = ('SELECT user_nicename, mensaje, comments.id as identificador, fecha_edicion, user_id, post_id
@@ -45,7 +45,7 @@
 									
 									<button name="delete" data-toggle="modal" data-target=<?php echo "#delete-modal-".$identificador; ?> class="button-comments">Borrar</button>
 						
-								<!--<form name="edit" action="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/edit-comments.php">-
+								<!--<form name="edit" action="/fiamma/miweb/wp-content/themes/intuition/core/edit-comments.php">-
 									<input name="message" type="hidden" value=<?php echo $item->mensaje ?> />
 									<input name="identificador" type="hidden" value=<?php echo $item->identificador ?> />
 									<input name="post_id" type="hidden" value=<?php echo $item->post_id ?> />-->
@@ -75,7 +75,7 @@
 									<h4 class="modal-title">Editar comentario</h4>
 								</div>
 
-								<form method="post" action="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/edit-comments.php">
+								<form method="post" action="/fiamma/miweb/wp-content/themes/intuition/core/edit-comments.php">
 									<div class="modal-body">
 										<textarea name="text"><?php echo $item->mensaje; ?></textarea>
 									</div>
@@ -103,7 +103,7 @@
 									<h4 class="modal-title">Borrar comentario</h4>
 								</div>
 
-								<form method="post" action="http://localhost/fiamma/miweb/wp-content/themes/intuition/core/delete-comments.php">
+								<form method="post" action="/fiamma/miweb/wp-content/themes/intuition/core/delete-comments.php">
 									<div class="modal-body">
 										<h4>¿Está seguro que desea borrar el comentario?
 									</div>

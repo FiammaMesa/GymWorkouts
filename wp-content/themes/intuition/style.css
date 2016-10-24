@@ -392,6 +392,7 @@ RESPONSIVE STYLES
 /* TABLET SCREENS (LANDSCAPE) */
 
 @media (max-width: 991px){
+
 	.feature-img1 { 
 		width: 100%;
 		height: 136px; 
@@ -428,7 +429,6 @@ RESPONSIVE STYLES
 	h3 {
 		font-size: 1.2em;
 	}
-
 
 }
 
@@ -493,7 +493,7 @@ RESPONSIVE STYLES
 	    color: #444;
 	    font-weight: 300;
 	    line-height: 1.2;
-	    margin: 24px 0 50px 68px;
+	    margin: 24px 0 50px 7px;
 	}
 }
 

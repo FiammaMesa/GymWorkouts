@@ -18,7 +18,7 @@
 
 						<div class="feature"><a href="http://localhost/fiamma/miweb/index.php/ejercicios-de-espalda-y-triceps/"><div class="feature-img1"></div></a><a href="http://localhost/fiamma/miweb/index.php/ejercicios-de-espalda-y-triceps/"><h3 class="feature-title">Espalda Tríceps</h3></a>
 							<div class="feature-content">
-								<p class="feature-content">Aquí encontraras una colección de ejercicios de espalda y triceps, ¡recuerda escoger como mínimo tres de cada uno!</p>
+								<p>Aquí encontraras una colección de ejercicios de espalda y triceps, ¡recuerda escoger como mínimo tres de cada uno!</p>
 							</div>
 						</div>
 

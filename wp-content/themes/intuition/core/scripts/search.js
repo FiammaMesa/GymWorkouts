@@ -1,6 +1,8 @@
 $(document).ready(function (){
 	$(".search").click(function(){
-		realizaProceso($(this).find("h3").html()); return false; 
+		realizaProceso($(this).find("h3").html()); 
+                /*$(".result").scrollTop(10);*/
+                return false; 
 	});
 
 });

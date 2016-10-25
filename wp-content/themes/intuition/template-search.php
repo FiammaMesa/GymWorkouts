@@ -50,7 +50,7 @@
 				</div>
 			</div>
 
-			<div class="row result">
+			<div class="row result" id="result">
 
 
 			</div>

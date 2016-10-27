@@ -912,6 +912,15 @@ RESPONSIVE STYLES
 
 @media (max-width: 767px) {
 
+	.menu-footer .menu-item .menu-link {text-align:center;}
+
+	.menu-item .menu-link .menu-footer{ 
+		display:block; 
+		position:relative; 
+		line-height:1.4; 
+		text-align:center; 
+	}
+
 	.main {
 	    overflow: hidden;
 	    padding: 0px 0 10px;

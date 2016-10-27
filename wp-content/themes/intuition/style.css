@@ -874,13 +874,17 @@ RESPONSIVE STYLES
 
 @media (max-width: 767px) {
 
+	.footer {
+		height: 270px;
+	}
+
 	.footer-logo {
 		margin-left: 40%;
     	margin-top: 8px;
 	}
 
 	.menu-footer {
-		margin-left: 3%;
+		margin-left: 0;
 		padding-top: 0;
 	}
 
@@ -1005,7 +1009,7 @@ RESPONSIVE STYLES
 
 	.features .feature {
 	    position: relative;
-	    margin: 0px 0 10px;
+	    margin: 0px 7px 10px;
 	    text-align: center;
 	    background: #fff;
 	    box-shadow: 0 1px 3px 1px rgba(0,0,0,0.1);

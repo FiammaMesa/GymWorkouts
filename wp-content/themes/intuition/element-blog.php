@@ -1,17 +1,8 @@
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>"> 
-	<!--<div class="post-image">
-		<?php cpotheme_postpage_image(); ?>		
-	</div>-->	
+	
 	<?php $current_post_id = get_the_ID(); ?>
 	<div class="post-body">
-		<!--<?php cpotheme_postpage_title(); ?>
-		<div class="post-byline">
-			<?php cpotheme_postpage_date(); ?>
-			<?php cpotheme_postpage_author(); ?>
-			<?php cpotheme_postpage_categories(); ?>
-			<?php cpotheme_postpage_comments(); ?>
-			<?php cpotheme_edit(); ?>
-		</div>-->
+		
 		<div class="post-content">
 			<?php cpotheme_postpage_content(); ?>
 		</div>
@@ -41,18 +32,11 @@
 							echo $item->fecha_edicion;
 							?><div class="buttons">
 								
-								
-									
 									<button name="delete" data-toggle="modal" data-target=<?php echo "#delete-modal-".$identificador; ?> class="button-comments">Borrar</button>
 						
-								<!--<form name="edit" action="/fiamma/miweb/wp-content/themes/intuition/core/edit-comments.php">-
-									<input name="message" type="hidden" value=<?php echo $item->mensaje ?> />
-									<input name="identificador" type="hidden" value=<?php echo $item->identificador ?> />
-									<input name="post_id" type="hidden" value=<?php echo $item->post_id ?> />-->
+								
 									<button name="edit" data-toggle="modal" data-target=<?php echo "#edit-modal-".$identificador; ?>  class="button-comments">Editar</button>
-								<!--</form>-->
-								
-								
+							
 
 							</div>
 

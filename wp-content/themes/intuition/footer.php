@@ -12,6 +12,7 @@
 	</div><!-- outer -->
 	<footer id="footer" class="footer secondary-color-bg dark">
 		<div class="container">
+			<img class="footer-logo" src="/fiamma/miweb/wp-content/uploads/2016/10/heartlogo3.png"/>
 			<?php do_action('cpotheme_footer'); ?>
 		</div>
 	</footer>

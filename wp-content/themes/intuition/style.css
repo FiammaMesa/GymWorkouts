@@ -224,7 +224,12 @@ LAYOUT
     clear: both; 
     color:#aaa; 
 }
-
+.footer-logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 47%;
+    margin-top: -67px;
+}
 
 /* --------------------------------------------------------------
 NAVIGATION
@@ -390,7 +395,7 @@ NAVIGATION
 }
 
 .footer-content {
-	padding: 1%;
+	padding: 6px;
 	margin-top: 3%;
 	border-bottom: 1px solid;
 }
@@ -409,7 +414,7 @@ NAVIGATION
 
 /* FOOTER MENU */
 .footermenu { float:right; }
-.menu-footer { text-align:left; margin:0; width: 337px; padding-top: 11%;}
+.menu-footer { text-align:left; margin:0; width: 337px; padding-top: 18%;}
 /*.menu-footer li a { font-weight:bold; }*/
 .menu-footer li ul li a { font-weight:normal; font-size:0.9em; }
 
@@ -791,6 +796,15 @@ RESPONSIVE STYLES
 
 @media (max-width: 768px) {
 
+	.menu-footer {
+		padding-top: 13%;
+	}
+
+	.footer-logo {
+		margin-left: 44%;
+		margin-top: -5%;
+	}
+
 	.pagetitle .pagetitle-title {
 		margin-left: -1%;
 		margin-top: 6%;
@@ -860,8 +874,14 @@ RESPONSIVE STYLES
 
 @media (max-width: 767px) {
 
+	.footer-logo {
+		margin-left: 40%;
+    	margin-top: 8px;
+	}
+
 	.menu-footer {
 		margin-left: 3%;
+		padding-top: 0;
 	}
 
 	.footer-content {

@@ -6,7 +6,7 @@
 <div id="main" class="main">
 	<div class="container">
 			<?php
-			if (current_user_can("pecho_biceps")) {
+			if (current_user_can("piernas_hombros")) {
 			?>
 
 			<div class="content">

@@ -1,100 +1,45 @@
 <?php 
 require_once( $_SERVER['DOCUMENT_ROOT'] . '/fiamma/miweb/wp-config.php' );
-$category = $_POST['titulo'];
-switch ($category) {
-	case "Espalda Tríceps":
-		global $wpdb;
-		$result = $wpdb->get_results('SELECT *
-									  FROM wp_posts
-									  WHERE ID IN (SELECT object_id
-									  				FROM wp_term_relationships
-									  				WHERE term_taxonomy_id IN (SELECT term_id
-									  											FROM wp_terms
-									  											WHERE ((slug="triceps")or(slug="dorsales")or(slug="trapecios")or(slug="lumbares")))
-													)
-									');
-		$final = $result;
+$campotexto = $_POST['campotexto'];
+$post_id = $_POST['post_id'];
+global $wpdb;
+$user = get_current_user_id();
+date_default_timezone_set('Europe/London');
+$date = date('Y-m-d H:i:s', time());
+	if ($user > 0) {
+		
+		$sql = $wpdb->insert('comments', array(
+					'post_id' => $post_id,
+					'user_id' => $user,
+					'fecha_creacion' => $date,
+					'fecha_edicion' => $date,
+					'mensaje' => $campotexto));
+		
+		//$wpdb->query($sql);
+	} else {
+		error_log("no logueado");
+	}
+?>
 
 
-		$num = 0;
-		foreach($result as $item){
-			$pos = strpos($item->post_content, "src=");
-			$fin = strpos("alt=", $item);
-			$num ++;
-			if ($pos) {
-				for ($i = $pos + 4; $i< $fin - 1; $i++){
-					array_push($final, $item[i]);
-				}
-				echo "<a href=".$item->guid.">";
-				echo "<div class='content-size image-".$num."'></div>";
-				echo "</a>";
-			
-			}
-			$final = "";
-		}
+<?php 
+$result = $wpdb->get_results('SELECT user_nicename
+								FROM wp_users
+								WHERE ID IN (SELECT user_id
+											FROM comments)');
 
-		break;
-
-	case "Piernas Hombros":
-		$num=8;
-		$result = $wpdb->get_results('SELECT *
-									  FROM wp_posts
-									  WHERE ID IN (SELECT object_id
-									  				FROM wp_term_relationships
-									  				WHERE term_taxonomy_id IN (SELECT term_id
-									  											FROM wp_terms
-									  											WHERE ((slug="cuadriceps")or(slug="isquiotibiales")or(slug="gemelos")or(slug="aductores")or(slug="abductores")or(slug="gluteos")or(slug="deltoides")))
-													)
-									');
-
-		foreach($result as $item){
-			$pos = strpos($item->post_content, "src=");
-			$fin = strpos("alt=", $item);
-			$num ++;
-			if ($pos) {
-				for ($i = $pos + 4; $i< $fin - 1; $i++){
-					array_push($final, $item[i]);
-				}
-				echo "<a href=".$item->guid.">";
-				echo "<div class='content-size image-".$num."'></div>";
-				echo "</a>";
-			
-			}
-			$final = "";
-		}
-
-		break;
-
-	case "Pecho Bíceps":
-		$num=17;
-		$result = $wpdb->get_results('SELECT *
-									  FROM wp_posts
-									  WHERE ID IN (SELECT object_id
-									  				FROM wp_term_relationships
-									  				WHERE term_taxonomy_id IN (SELECT term_id
-									  											FROM wp_terms
-									  											WHERE ((slug="pecho")or(slug="biceps")))
-													)
-									');
-
-		foreach($result as $item){
-			$pos = strpos($item->post_content, "src=");
-			$fin = strpos("alt=", $item);
-			$num ++;
-			if ($pos) {
-				for ($i = $pos + 4; $i< $fin - 1; $i++){
-					array_push($final, $item[i]);
-				}
-				echo "<a href=".$item->guid.">";
-				echo "<div class='content-size image-".$num."'></div>";
-				echo "</a>";
-			
-			}
-			$final = "";
-		}
-		break;
-
-	default: 
-		break;
+/* ------- REDIRECCIÓN ------*/
+$my_query="SELECT guid
+			FROM wp_posts
+			WHERE ID='".$post_id."'";
+$url = $wpdb->get_results($my_query);
+foreach($url as $item) {
+	$return = "Location: ".$item->guid."#history-comments";
+break;
 }
+header($return);
+?>
+
+
+
 ?>

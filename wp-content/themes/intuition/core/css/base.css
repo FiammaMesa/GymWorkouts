@@ -191,7 +191,7 @@ LAYOUT
 .row .content-samples img{
 	height: 200px;
 	width: 200px;
-	border: 1px solid #eee;
+	border: 1px solid white;
 	display: block;
 	float: right;
 	margin-right: 2%;

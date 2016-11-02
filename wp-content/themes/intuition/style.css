@@ -143,7 +143,7 @@ LAYOUT
 /* PAGE BANNERS AND TITLES */
 .banner { overflow:hidden; padding:0; margin:0; max-height:500px; }
 .banner .banner-image { display:block; width:100%; height:auto; line-height:0; padding:0; margin:0; }
-.pagetitle { overflow:hidden; padding:4px 0; margin:0; }
+.pagetitle { overflow:hidden; padding:4px 0; margin:0; background:white;}
 .pagetitle .pagetitle-title { margin-top: 5%; margin-bottom: 0px;float:left; font-size:2.5em; }
 
 
@@ -173,6 +173,7 @@ LAYOUT
 .features .feature .feature-content { clear:both; text-align:justity; margin: 2%;}
 
 #main .container {
+	background: white;
 	width: 100%;
 }
 
@@ -209,7 +210,9 @@ LAYOUT
 }
 
 /* PAGE CONTENT */
-.main { }
+.main {
+	background: white;
+}
 
 
 /* SIDEBARS */
@@ -402,7 +405,6 @@ NAVIGATION
     float: right;
     margin: 3.5%;
     background-color: rgba(255,255,255,0.8);
-    height:	618px;
 }
 
 
@@ -441,7 +443,7 @@ NAVIGATION
 }
 
 .map {
-	width: 1109px;
+	width: 100.5%;
     height: 500px;
 }
 
@@ -958,6 +960,8 @@ RESPONSIVE STYLES
 
 
 @media (max-width: 767px) {
+
+	
 	.content-video .imagenes img{
 		width: 83%;
 		height: 50%;
@@ -991,14 +995,18 @@ RESPONSIVE STYLES
 	    width: 24%;
 	}
 
+	.info-contact {
+		margin: 3.6%;
+  		width: 91.9%;
+	}
+
 	.contact .contact-form {
 		width: 92%;
 		margin-top: 6%;
 	}
-
 	.contact .image-contact {
-		height: 455px;
-    	width: 728px;
+	    height: 673px;
+    	width: 1079px;
 	}
 
 	.contact .contact-form label {
@@ -1110,8 +1118,24 @@ RESPONSIVE STYLES
 
 @media (max-width: 320px) {
 
+	.contact .image-contact {
+	    height: 616px;
+	    width: 983px;
+	}
+
 	.menu-footer {
 		width: 335px;
+	}
+
+	.map {
+		margin-left: 5%;
+		width: 90%;
+	    height: 300px;
+	}
+
+	.info-contact {
+		margin: 3.6%;
+  		width: 91.9%;
 	}
 
 }

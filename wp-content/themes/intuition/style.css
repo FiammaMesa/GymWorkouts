@@ -30,6 +30,10 @@ h4 { font-size:1.3em; }
 h5 { font-size:1.2em; } 
 h6 { font-size:1.1em; }
 
+.h2-info {
+	text-align: center;
+}
+
 .ident {
 	margin-left: 65px;
 }
@@ -380,10 +384,10 @@ NAVIGATION
 }
 
 .content-video .imagen2 img{
-	width: 25%;
 	height: 20%;
+	width: 29%;	
 	float: right;
-	margin-top: 4%;
+	margin-top: 4.5%;
 	
 }
 
@@ -677,7 +681,7 @@ COMMENTS
 
 .paragraph {
     width: 35%;
-    margin-left: 33%;
+    margin-left: 32%;
     text-align: justify;
 }
 
@@ -754,13 +758,21 @@ RESPONSIVE STYLES
 @media (max-width: 1024px){
 
 	.paragraph {
-		width: 100%;
-		margin-left: 0;
+	    width: 42%;
+    	margin-left: 28%;
 	}
 
-	.content-video .imagenes img{
-		width: 83%;
+	.content-video .imagen1 img{
+		width: 25%;
 		height: 50%;
+		float: left;
+	}
+
+	.content-video .imagen2 img{
+		width: 27%;
+		height: 50%;
+		float: right;
+		margin-top: 7.5%;
 	}
 
 	#features .container {
@@ -918,9 +930,24 @@ RESPONSIVE STYLES
 		background:#f9c670; 
 	}
 
-	.content-video .imagenes img{
+	.content-video .imagen1 img{
 		width: 83%;
 		height: 50%;
+		float: none;
+		margin-left: 6%;
+	}
+
+	.content-video .imagen2 img{
+		width: 83%;
+		height: 50%;
+		float: none;
+		margin-left: 10%;
+	}
+
+	.paragraph {
+		width: 83%;
+		margin-left: 9%;
+		margin-top: 3%;
 	}
 
 	.footer-content{

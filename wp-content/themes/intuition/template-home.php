@@ -1,7 +1,10 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
-
+<?php 
+echo do_shortcode('[smartslider3 slider=3]');
+?>
 <?php get_template_part('element', 'page-header'); ?>
+
 
 <div id="main" class="main">
 	<div class="container">

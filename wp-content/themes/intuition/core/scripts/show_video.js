@@ -41,11 +41,11 @@ jQuery(document).ready(function(){
 
 	$(".icon1").click(function(){
 		if($(".icon1").hasClass("plus-icon")){
-			$(".just-for-view1").removeClass("slice-video");
+			$(".just-for-view1").slideDown("slice-video");
 			$(".icon1").removeClass("plus-icon");
 			$(".icon1").addClass("minus-icon");
 		} else {
-			$(".just-for-view1").addClass("slice-video");
+			$(".just-for-view1").slideUp("slice-video");
 			$(".icon1").removeClass("minus-icon");
 			$(".icon1").addClass("plus-icon");
 		}
@@ -53,11 +53,11 @@ jQuery(document).ready(function(){
 
 	$(".icon2").click(function(){
 		if($(".icon2").hasClass("plus-icon")){
-			$(".just-for-view2").removeClass("slice-video");
+			$(".just-for-view2").slideDown("slice-video");
 			$(".icon2").removeClass("plus-icon");
 			$(".icon2").addClass("minus-icon");
 		} else {
-			$(".just-for-view2").addClass("slice-video");
+			$(".just-for-view2").slideUp("slice-video");
 			$(".icon2").removeClass("minus-icon");
 			$(".icon2").addClass("plus-icon");
 		}
@@ -65,11 +65,11 @@ jQuery(document).ready(function(){
 
 	$(".icon3").click(function(){
 		if($(".icon3").hasClass("plus-icon")){
-			$(".just-for-view3").removeClass("slice-video");
+			$(".just-for-view3").slideDown("slice-video");
 			$(".icon3").removeClass("plus-icon");
 			$(".icon3").addClass("minus-icon");
 		} else {
-			$(".just-for-view3").addClass("slice-video");
+			$(".just-for-view3").slideUp('slow');
 			$(".icon3").removeClass("minus-icon");
 			$(".icon3").addClass("plus-icon");
 		}

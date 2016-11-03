@@ -10,7 +10,7 @@
 	
 			<div class="content-title">
 				<div class="content-text">
-					<h2 class="feature-content h2-info">Lo esencial...</h2>
+					<h2 class="feature-content h2-center">Lo esencial...</h2>
 				</div>
 		    </div>
 

@@ -5,9 +5,9 @@
 
 <div id="main" class="main">
 	<div class="container">
-		<h2 class="feature-content">Nuestra política de cookies</h2>
+		<h2 class="feature-content h2-center">Nuestra política de cookies</h2>
 
-		<div class="paragraph">
+		<div class="big-paragraph">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus libero ut commodo ultrices. Curabitur sit amet magna non orci pellentesque fringilla nec a enim. Vivamus at feugiat massa, id tempus justo. Nam hendrerit est eget felis varius, nec tristique augue consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin massa neque, iaculis vitae pharetra at, faucibus non libero. Suspendisse dignissim, dui non tristique auctor, odio odio congue turpis, sit amet gravida urna tellus scelerisque ante. Fusce vehicula pretium enim, eget consectetur enim tincidunt vel. Fusce vel sapien blandit, laoreet velit nec, faucibus sem. Integer vitae placerat massa.</p>
 
 			<p>In facilisis in magna vel cursus. Nulla facilisi. Suspendisse ut purus quam. Nulla facilisi. Aenean placerat augue rutrum velit euismod iaculis. Quisque eget sollicitudin elit. Curabitur sit amet erat ut est pulvinar consectetur. Vivamus non gravida neque, id molestie metus. Aliquam posuere at nulla ac faucibus. Aenean congue purus tellus, sit amet ultricies nisi imperdiet nec.</p>

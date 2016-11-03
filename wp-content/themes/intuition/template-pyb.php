@@ -6,6 +6,8 @@
 <div id="main" class="main">
 	<div class="container">
 			<?php
+
+			/* Check the capabilities of the current user */
 			if (current_user_can("pecho_biceps")) {
 			?>
 
@@ -18,6 +20,7 @@
 					</div>
 
 					<?php
+						/* ASK THE DB DEPENDING ON THE CATEGORY POST */
 		        		global $wpdb;
 		        		$results = $wpdb->get_results('SELECT * 
 														FROM wp_posts 
@@ -30,7 +33,9 @@
 		        									 ');
 		        		foreach ($results as $result){
 		        			?> <div class="content-samples column-narrow col3"> <?php
-		        					$pos = strpos($result->post_content, "<form");
+									/* Find the <form string to know where we need to cut */
+									$pos = strpos($result->post_content, "<form");
+		        					/* Cut the post_content result searching to take just the image */
 			        				$item = substr($result->post_content, 0, $pos-30);
 			        				echo "<a href=".$result->guid.">";
 			        				echo $item;
@@ -59,9 +64,9 @@
 																								WHERE slug="biceps") 
 		        													)
 		        									 ');
+
 		        		foreach ($results as $result){
-		        			?> <div class="content-samples column-narrow col3"> 
-		        				<?php
+		        			?> <div class="content-samples column-narrow col3"> <?php
 		        					$pos = strpos($result->post_content, "<form");
 			        				$item = substr($result->post_content, 0, $pos-30);
 			        				echo "<a href=".$result->guid.">";
@@ -69,6 +74,7 @@
 			        				echo "</a>";
 		        			?> </div> <?php
 		        		}
+
 		        	?>
 					</div>
 				

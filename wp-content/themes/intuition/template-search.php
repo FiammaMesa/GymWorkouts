@@ -7,6 +7,8 @@
 	<div class="container">
 
 		<?php
+
+		/* Function to prove for checking if the user is Log In or Log Out */
 		if (is_user_logged_in()) {
 		?>
 			<div class="row">

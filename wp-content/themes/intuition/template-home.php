@@ -14,6 +14,8 @@ echo do_shortcode('[smartslider3 slider=3]');
 				<div class="row">
 
 				<?php
+
+				/* Prove the user perms to show the features of the web */
 				if (current_user_can("espalda_triceps")) {
 				?>
 
@@ -31,7 +33,7 @@ echo do_shortcode('[smartslider3 slider=3]');
 				} else {
 				?>
 
-					<div class="column-narrow col3" style="opacity:0.3;">
+					<div class="column-narrow col3 opaco">
 
 						<div class="feature"><div class="feature-img1"></div><h3 class="feature-title">Espalda Tríceps</h3>
 							<div class="feature-content">
@@ -58,7 +60,7 @@ echo do_shortcode('[smartslider3 slider=3]');
 				<?php
 				} else {
 				?>
-					<div class="column-narrow col3" style="opacity: 0.3;">
+					<div class="column-narrow col3 opaco" >
 
 						<div class="feature"><div class="feature-img2"></div><h3 class="feature-title">Piernas Hombros</h3>
 							<div class="feature-content">
@@ -85,7 +87,7 @@ echo do_shortcode('[smartslider3 slider=3]');
 				<?php
 				} else {
 				?>
-					<div class="column-narrow col3 last-column" style="opacity: 0.3;">
+					<div class="column-narrow col3 last-column opaco">
 
 						<div class="feature"><div class="feature-img3"></div><h3 class="feature-title">Pecho Bíceps</h3>
 							<div class="feature-content">
@@ -100,26 +102,6 @@ echo do_shortcode('[smartslider3 slider=3]');
 				</div>
 			</div>
 		</div>
-			
-<?php /*---------------------------------------------------------------------------------------------------------*/
-		global $wpdb;
-		if (!is_user_logged_in()) {
-			$results = $wpdb->get_results( 'SELECT post_content FROM wp_posts WHERE ID = "162"');
-			foreach ($results as $single_result) {
-				echo $single_result->post_content;
-			}
-		}
-
-?>
-
-	
-
-
-
-
-
-<?php /*---------------------------------------------------------------------------------------------------------*/?>
-
 
 
 
@@ -142,7 +124,7 @@ echo do_shortcode('[smartslider3 slider=3]');
 								<a href="https://www.youtube.com/user/EntrenaSergioPeinado">
 									<h3 class="portfolio-title">Sergio Peinado</h3>
 								</a>
-								<div class="icon1 icon-opacity minus-icon plus-icon">
+								<div class="icon1 icon-opacity plus-icon">
 
 								</div>
 							</div>
@@ -173,7 +155,7 @@ echo do_shortcode('[smartslider3 slider=3]');
 								<a href="https://www.youtube.com/user/NatyArcilaZ">
 									<h3 class="portfolio-title">Naty Arcila</h3>
 								</a>
-								<div class="icon2 icon-opacity minus-icon plus-icon">
+								<div class="icon2 icon-opacity plus-icon">
 
 								</div>
 							</div>
@@ -203,7 +185,7 @@ echo do_shortcode('[smartslider3 slider=3]');
 								<a href="https://www.youtube.com/user/myBodyDeporte">
 									<h3 class="portfolio-title">Rubén Muca</h3>
 								</a>
-								<div class="icon3 icon-opacity minus-icon plus-icon">
+								<div class="icon3 icon-opacity plus-icon">
 
 								</div>
 							</div>

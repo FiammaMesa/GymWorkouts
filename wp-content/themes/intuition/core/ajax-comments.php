@@ -8,6 +8,7 @@ date_default_timezone_set('Europe/London');
 $date = date('Y-m-d H:i:s', time());
 	if ($user > 0) {
 		
+		/* Insertamos el mensaje en la base de datos */
 		$sql = $wpdb->insert('comments', array(
 					'post_id' => $post_id,
 					'user_id' => $user,
@@ -15,7 +16,6 @@ $date = date('Y-m-d H:i:s', time());
 					'fecha_edicion' => $date,
 					'mensaje' => $campotexto));
 		
-		//$wpdb->query($sql);
 	} else {
 		error_log("no logueado");
 	}

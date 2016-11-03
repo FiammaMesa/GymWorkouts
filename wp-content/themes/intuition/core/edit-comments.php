@@ -6,7 +6,8 @@ $post_id = $_POST['post_id'];
 global $wpdb;
 date_default_timezone_set('Europe/London');
 $date = date('Y-m-d H:i:s', time());
- 
+
+/* Update a row from a table in the DB */
 $sql = $wpdb->update('comments', array(
 						'mensaje' => $text,
 						'fecha_edicion' => $date),

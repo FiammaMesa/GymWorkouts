@@ -15,7 +15,6 @@ $date = date('Y-m-d H:i:s', time());
 					'fecha_edicion' => $date,
 					'mensaje' => $campotexto));
 		
-		//$wpdb->query($sql);
 	} else {
 		error_log("no logueado");
 	}

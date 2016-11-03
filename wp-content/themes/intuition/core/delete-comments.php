@@ -4,7 +4,10 @@ $comment_identificador = $_POST['identificador'];
 $post_id = $_POST['post_id'];
 global $wpdb;
 echo $comment_identificador;
+
+/* Delete a row from a table in the DB */
 $wpdb->delete('comments', array('id'=> $comment_identificador));
+
 /* ------ REDIRECCIÓN ------ */
 $my_query="SELECT guid
 			FROM wp_posts

@@ -11,10 +11,8 @@
 });*/
 
 jQuery(document).ready(function(){
-	$(".icon1").removeClass("minus-icon");
-	$(".icon2").removeClass("minus-icon");
-	$(".icon3").removeClass("minus-icon");
 
+	/* Function for turn on or off the icons */
 	$(".icon1").hover(function(){
 		$(".icon1").removeClass("icon-opacity");
 	},
@@ -39,6 +37,7 @@ jQuery(document).ready(function(){
 		
 	});
 
+	/* On click it adds or remove the slice-video class, which has a display: none attribute */
 	$(".icon1").click(function(){
 		if($(".icon1").hasClass("plus-icon")){
 			$(".just-for-view1").slideDown("slice-video");

@@ -838,6 +838,15 @@ RESPONSIVE STYLES
 
 @media (max-width: 768px) {
 
+	.main {
+		padding-bottom: 215px;
+	}
+
+	.footer {
+		margin-top: -215px;
+		height: 215px;
+	}
+
 	.menu-footer {
 		padding-top: 13%;
 	}
@@ -932,6 +941,9 @@ RESPONSIVE STYLES
 
 @media (max-width: 767px) {
 
+	.main {
+		padding-bottom: 350px;
+	}
 
 	.content-video .imagenes img{
 		width: 83%;
@@ -1089,9 +1101,37 @@ RESPONSIVE STYLES
 
 }
 
+@media (max-width: 568px) {
+
+	.main {
+		padding-bottom: 300px;
+	}
+
+	.footer-content {
+		margin-top: 0;
+	}
+
+	.footer {
+		padding-top: 15px;
+		height: 260px;
+		margin-top: -260px;
+	}
+}
+
+
 /* Móviles verticales*/
 
 @media (max-width: 320px) {
+
+	.main {
+		padding-bottom: 260px;
+	}
+
+	.footer {
+		padding-top: 16px;
+		margin-top: -260px;
+		height: 260;
+	}
 
 	.footer-logo {
 	    margin-left: 122px;

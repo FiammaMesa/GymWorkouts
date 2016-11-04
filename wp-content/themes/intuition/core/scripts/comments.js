@@ -13,9 +13,15 @@ function realizaProceso(){
                 beforeSend: function () {
                         $(".history-comments").html("Procesando, espere por favor...");
                 },
-                success:  function (response) {
-                	
+                success:  function (response) {	
                         $(".history-comments").html(response);
                 }
         });
 }
+
+/*Ya no se llama a este fichero, se hace en un script en la propia entrada*/
+
+
+var $campotexto = document.getElementById("campotexto").innerHtml;
+alert($campotexto);
+var $id = document.getElementById("post_id").value;

@@ -43,7 +43,6 @@
 						</div>
 						
 						<div class="message-comments"><?php
-							error_log("Cajita-".$item->identificador);
 							echo "\"".$item->mensaje."\"";
 						?></div>
 					</div>

@@ -92,7 +92,7 @@
 									</div>
 									<div class="modal-footer">
 										<input name="identificador" type="hidden" value=<?php echo $item->identificador ?> />
-									<input name="post_id" type="hidden" value=<?php echo $item->post_id ?> />
+										<input name="post_id" type="hidden" value=<?php echo $item->post_id ?> />
 										<button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
 										<button type="submit" class="btn btn-primary">SÍ</button>
 									</div>

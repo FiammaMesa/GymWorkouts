@@ -31,20 +31,21 @@ $myQuery="SELECT user_nicename
 $result = $wpdb->get_results($myQuery);
 
 foreach ($result as $myuser) {
-	$user_name=$myuser->user_nicename;
+	$userName=$myuser->user_nicename;
 	break;
 }
 
 $mySecondQuery="SELECT id, mensaje
 		FROM comments
-		WHERE ((fecha_edicion=".$date.") AND (user_id=".$user."))";
+		WHERE ((fecha_edicion='".$date."') AND (user_id='".$user."'))";
 
 $id_message = $wpdb->get_results($mySecondQuery);
+
 foreach ($id_message as $item) {
 
 $newComment = "	<div id='comment-id-".$post_id." class='history-comments'>
 					<div class='user-comments'>"
-						.$user_name.": 
+						.$userName.": 
 					</div>
 					<div class='date-comments'>"
 						.$date."
@@ -73,21 +74,49 @@ $newComment = "	<div id='comment-id-".$post_id." class='history-comments'>
 
 							<form method='post' action='/fiamma/miweb/wp-content/themes/intuition/core/edit-comments.php'>
 								<div class='modal-body'>
-									<textarea name='text'>".$item->mensaje."></textarea>
+									<textarea name='text'>".$item->mensaje."</textarea>
 								</div>
 								<div class='modal-footer'>
 									<input name='message' type='hidden' value='".$item->mensaje."'/>
 									<input name='identificador' type='hidden' value='".$item->id."'/>
 									<input name='post_id' type='hidden' value='".$post_id."'/>
 									<button type='button' class='btn btn-default' data-dismiss='modal'>Cerrar</button>
-									<button type='button' class='btn-tbn-primary'>Guardar cambios</button>
+									<button type='submit' class='btn btn-primary'>Guardar cambios</button>
 								</div>
 							</form>
 						</div>
 					</div>
 				</div>
 
-				";
+
+				<div class='modal fade' id='delete-modal-".$item->id."' tabindex='-1' role='dialog'>
+					<div class='modal-dialog' role='document'>
+						<div class='modal-content'>
+							<div class='modal-header'>
+								<button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+									<span aria-hidden='true'>&times;</span>
+								</button>
+								<h4 class='modal-title'>Borrar comentario</h4>
+							</div>
+
+							<form method='post' action='/fiamma/miweb/wp-content/themes/intuition/core/delete-comments.php'>
+								<div class='modal-body'>
+									<h4>¿Está seguro que desea borrar el comentario?
+								</div>
+
+								<div class='modal-footer'>
+									<input name='identificador' type='hidden' value='".$item->id."'/>
+									<input name='post_id' type='hidden' value='".$post_id."'/>
+									<button type='button' class='btn btn-default' data-dismiss='modal'>NO</button>
+									<button type='submit' class='btn btn-primary'>SÍ</button>
+								</div>
+							</form>
+
+						</div>
+					</div>
+				</div>
+			";
+
 echo $newComment;
 }
 

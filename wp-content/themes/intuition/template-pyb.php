@@ -34,9 +34,9 @@
 		        		foreach ($results as $result){
 		        			?> <div class="content-samples column-narrow col3"> <?php
 									/* Find the <form string to know where we need to cut */
-									$pos = strpos($result->post_content, "<form");
+									$pos = strpos($result->post_content, "flag");
 		        					/* Cut the post_content result searching to take just the image */
-			        				$item = substr($result->post_content, 0, $pos-30);
+			        				$item = substr($result->post_content, 0, $pos-13);
 			        				echo "<a href=".$result->guid.">";
 			        				echo $item;
 			        				echo "</a>";
@@ -67,8 +67,8 @@
 
 		        		foreach ($results as $result){
 		        			?> <div class="content-samples column-narrow col3"> <?php
-		        					$pos = strpos($result->post_content, "<form");
-			        				$item = substr($result->post_content, 0, $pos-30);
+		        					$pos = strpos($result->post_content, "flag");
+			        				$item = substr($result->post_content, 0, $pos-13);
 			        				echo "<a href=".$result->guid.">";
 			        				echo $item;
 			        				echo "</a>";

@@ -8,7 +8,7 @@ echo $comment_identificador;
 /* Delete a row from a table in the DB */
 $wpdb->delete('comments', array('id'=> $comment_identificador));
 
-/* ------ REDIRECCIÓN ------ */
+/* ------ REDIRECT ------ */
 $my_query="SELECT guid
 			FROM wp_posts
 			WHERE ID='".$post_id."'";

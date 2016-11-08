@@ -48,7 +48,7 @@
 					</div>
 
 
-					<!-- ************ MODAL EDITAR ************ -->
+					<!-- ************ MODAL EDIT ************ -->
 
 					<div class="modal fade" id=<?php echo "edit-modal-".$identificador; ?> tabindex="-1" role="dialog">
 						<div class="modal-dialog" role="document">
@@ -76,7 +76,7 @@
 					</div><!-- /.modal -->
 
 
-					<!-- ************ MODAL BORRAR ************ -->
+					<!-- ************ MODAL DELETE ************ -->
 
 					<div class="modal fade" id=<?php echo "delete-modal-".$identificador; ?> tabindex="-1" role="dialog">
 						<div class="modal-dialog" role="document">

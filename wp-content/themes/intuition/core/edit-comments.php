@@ -21,7 +21,7 @@ $sql = $wpdb->update('comments', array(
 						array('%d')
 					);
 		
-/* ----- REDIRECCIÓN -----*/
+/* ----- REDIRECT -----*/
 $my_query="SELECT guid
 			FROM wp_posts
 			WHERE ID='".$post_id."'";
